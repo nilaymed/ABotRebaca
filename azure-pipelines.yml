@@ -10,8 +10,12 @@ pool:
   name: 'ABotOFunk'
 
 steps:
-- script: echo Hello, world!
+- script: | 
+    echo "Run custom command"
+    cd $(System.DefaultWorkingDirectory)
+    test.bat 
   displayName: 'Run a one-line script'
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
