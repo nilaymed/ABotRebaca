@@ -13,6 +13,8 @@ steps:
 - script: | 
     echo "Run custom command"
     cd $(System.DefaultWorkingDirectory)
+    dir
+    cd C:\Users\rebaca\agent\_work
     test.bat 
   displayName: 'Run a one-line script'
 
