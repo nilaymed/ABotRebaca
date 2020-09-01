@@ -21,7 +21,8 @@ echo Executing test cases for tag %1...
 SET dtStamp9=%date:~-4%%date:~4,2%%date:~7,2%_0%time:~1,1%%time:~3,2%%time:~6,2% 
 echo Started execution with tag %1
 rem mvn -T 4 -Dtest=WebExecutor  -DCucumber.options="--tags %1" -DDisplayHTMLReport=true -Djava.awt.headless=false > log/webrunner/webrunner_"%dtStamp9%".log  2>&1
-mvn -T 4 test -Dtest=WebExecutor -DAutomationOptions.tags=%1 -DDisplayHTMLReport=true -Djava.awt.headless=false > log/webrunner/webrunner_"%dtStamp9%".log  2>&1
+rem mvn -T 4 test -Dtest=WebExecutor -DAutomationOptions.tags=%1 -DDisplayHTMLReport=true -Djava.awt.headless=false > log/webrunner/webrunner_"%dtStamp9%".log  2>&1
+mvn -T 4 test -Dtest=WebExecutor -DAutomationOptions.tags=%1 -DDisplayHTMLReport=true -Djava.awt.headless=false
 rem - shift the arguments and examine %1 again
 shift
 goto again
