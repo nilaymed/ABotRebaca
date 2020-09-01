@@ -12,10 +12,6 @@ pool:
 steps:
 - script: | 
     echo "Download CodeBase"
-    #cd $(System.DefaultWorkingDirectory)
-    #dir
-    #cd C:\Users\rebaca\agent\_work
-    #test.bat 
   displayName: 'Download_CODE_BASE'
 
 - script: | 
