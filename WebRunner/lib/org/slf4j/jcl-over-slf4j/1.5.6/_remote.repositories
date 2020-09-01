@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 13 18:27:55 IST 2019
+jcl-over-slf4j-1.5.6.jar>plugin-file-repo=
+jcl-over-slf4j-1.5.6.pom>plugin-file-repo=

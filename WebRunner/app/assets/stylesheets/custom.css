@@ -1,0 +1,40 @@
+/* Custom CSS	*/
+
+object #fullwidth_header{
+    display:none !important; 
+}
+object #fullwidth_gradient{
+    margin-top: 0px;
+}
+.iframe{
+    display:none;
+}
+#file-content-mask{
+    background: #fff;
+    width: 68%;
+    position: fixed;
+}
+#file-contentmask{
+    background: #fff;
+    width: 68%;
+    position: fixed;
+}
+#download-link{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 0px dashed deeppink;
+}
+.download-space{
+  position: relative;   
+}
+.logo-text{
+    color: #fff; text-transform: uppercase; font-weight: bold; font-size: 24px; padding-top: 27px; float:left;
+}
+#directoryTreeContainer_1 .jqueryFileTree .ext_json{
+    display: none;
+}
+.release-no-text{
+        float:right; margin: 28px 20px 0 0; font-weight: bold; font-size: 14px; color: #fff;
+}

@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <!--header section-->
+    <ng-include src="'Content/Js/Apps/templates/partials/header.tpl.html'"></ng-include>
+    <!--end header-->
+    <!-- Left side column. contains the logo and sidebar -->
+    <ng-include src="'Content/Js/Apps/templates/partials/leftbar.tpl.html'"></ng-include>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 0px;">
+
+        <!-- Main content -->
+        <div ng-init="init()">
+            <div ng-if="dash_state==='dashboardFeatureView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/dashboardFeatureView.tpl.html'"></ng-include>
+            </div>
+            <div ng-if="dash_state==='dashboardTagView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/dashboardTagView.tpl.html'"></ng-include>
+            </div>
+            <div ng-if="dash_state==='tagOverview'">
+                <ng-include src="'Content/Js/Apps/templates/partials/tagOverview.tpl.html'"></ng-include>
+            </div>
+            <div ng-if="dash_state==='artifactsView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/artifactsView.tpl.html'"></ng-include>
+            </div>
+            <div ng-if="dash_state==='featureFileView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/featureFileView.tpl.html'"></ng-include>
+            </div>
+            <div ng-if="dash_state==='configView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/configView.tpl.html'"></ng-include>
+            </div>
+            <div ng-show="dash_state==='executionView'">
+                <ng-include src="'Content/Js/Apps/templates/partials/executionView.tpl.html'"></ng-include>
+            </div>
+            <div ng-show="dash_state==='graphView'">
+            
+                <ng-include src="'Content/Js/Apps/templates/partials/graphView.tpl.html'"></ng-include>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <ng-include src="'Content/Js/Apps/templates/partials/footer.tpl.html'"></ng-include>
+</div>
+<!-- ./wrapper -->

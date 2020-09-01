@@ -1,0 +1,72 @@
+<style>
+
+.opac {
+	opacity : 0.1;
+}
+
+
+</style>
+<div data-ng-controller="ConfigCtrl" data-ng-init="init()">
+	<section class="content" style="height: 100%; min-height: 100%">
+
+		<div id="configView" class="row" style="height: 100%">
+			<div class="col-md-12">
+				<div class="box box-danger">
+					<div class="box-header with-border">
+						<div class="pull-left">
+							<h5 class="box-title pull-left">Config&#160&#160&#160</h5>
+							<h8>{{displayPath}}</h8>
+						</div>
+						<div class="box-tools pull-right">
+								<a target="_self" ng-href="{{fullFilePath}}" ng-show="readOnlyMode==true"
+									download="{{selectedFileNameDownload}}"
+									title="{{downloadFileName}}"><i class="fa fa-download"
+									style="color: #444444; font-size: 19px;"></i></a>
+
+								<a href="" class="" type="button" ng-show="readOnlyMode==true && selectedFileName!=''" style=" padding-left: 5px;padding-top: 2px;"
+									ng-click="editConfig()">
+									<i class="fa fa-edit" style="color: #444444; font-size: 19px;"></i>
+								</a>
+								<a href="" class="" type="button" ng-show="readOnlyMode==false && selectedFileName!=''" style=" padding-left: 5px;padding-top: 2px;"
+									ng-click="confirmChanges()">
+									<i class="fa fa-floppy-o"
+										style="color: #444444; font-size: 19px;"></i>
+								</a>
+								<a href="" class="" type="button" style=" padding-left: 5px;padding-top: 2px;"
+									ng-click="cancelChanges()" ng-show="readOnlyMode==false && selectedFileName!=''">
+									<i class="fa fa-times" style="color: #444444; font-size: 19px;"></i>
+								</a>
+							<button type="button" class="btn btn-box-tool"
+								data-widget="collapse">
+								<i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div id="configBody" class="box-body" style="height: 100%;padding:0px;">
+						<div id="configPanel" class="row panel-container" style="height: 100%;">
+							<div class="col-md-3 panel-left" style="resize: horizontal; padding-left: 15px; padding-right: 0px; transition: all 0s ease 0s; width: 313px;">
+								<section class="panel" style="margin-bottom: 5px;">
+									<div id="configLeftTree" ng-class="{'opac' : readOnlyMode==false}" class="panel-body file-show-container container-scroll" ng-disabled="!readOnlyMode"
+										style="overflow: auto; height: 34em">
+										<!--<div id="file-content-mask" style="width:90%"></div>-->
+										<div data-angular-treeview="true" data-tree-id="filetree"
+											data-tree-model="treedata" data-node-id="id"
+											data-node-label="label" data-node-children="children"
+											data-nodeicon="class" id="treeViewUi"
+											data-ng-click="printConfigParent($event);"></div>
+									</div>
+								</section>
+							</div>
+							<div id="configSplitter" class="splitter"  style="height: 32em"></div>
+							<div id="configContent" class="col-md-9 panel-right" style="height: 100%;padding-right: 15px;padding-left: 5px;">
+								<textarea wrap="off" id="configFileView" ng-readonly="readOnlyMode" ng-bind-html="configData" ng-model="configData"
+									class="prettyprint lang-xml" contenteditable="false"
+									style="height: 32em; width:100%; overflow: auto;"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

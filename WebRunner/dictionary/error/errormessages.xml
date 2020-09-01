@@ -1,0 +1,1340 @@
+<!-- ########################################################################################################################### 
+	# Error validation dictionary - errormessages.xml # # Rebaca Technology Private 
+	Limited 2019-2020 # # # # This SOFTWARE PRODUCT is provided by THE PROVIDER 
+	"as is" and "with known bugs." THE PROVIDER makes no representations # # 
+	or warranties of any kind concerning the safety, suitability, lack of viruses, 
+	inaccuracies, typographical errors, or # # other harmful components of this 
+	SOFTWARE PRODUCT. There are inherent dangers in the use of any software, 
+	and you are # # solely responsible for determining whether this SOFTWARE 
+	PRODUCT is compatible with your equipment and other software # # installed 
+	on your equipment. You are also solely responsible for the protection of 
+	your equipment and backup of your # # data, and THE PROVIDER will not be 
+	liable for any damages you may suffer in connection with using, modifying, 
+	or # # distributing this SOFTWARE PRODUCT. THE PROVIDER has however tested 
+	the integrity of the SOFTWARE in every sense, just # # to ensure it will 
+	not bring in ANY collateral damages to the system. # # # # It is NOT recommended 
+	to change the order or contents of this file, since it may break the error 
+	and validation # # mechanism partially or completely. # ########################################################################################################################### -->
+
+<ErrorOrWarning>
+	<Error id="METHOD_NOT_IMPLEMENTED_YET">
+		<code>15000</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Method {} not implemented yet</message>
+	</Error>
+	<Error id="FAILED_TO_START_PLAYER">
+		<code>15001</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			Unable to start the player. Error Message:
+		]]>
+		</help>
+		<message>Unable to start the player. Error Message: {}</message>
+	</Error>
+	<Error id="PLAYER_STATE_ERROR">
+		<code>15002</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			Failed to vaidate the playing state
+		]]>
+		</help>
+		<message>Failed to validate the playing state</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_MEDIA_PLAYBACK">
+		<code>15003</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate media playback due to : {}</message>
+	</Error>
+	<Error id="INVALID_MEDIA_ACTIONS">
+		<code>15004</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			Invalid player action 
+		]]>
+		</help>
+		<message>Invalid player action</message>
+	</Error>
+
+	<Error id="INVALID_PAGE_ELEMENT_DEFINITION">
+		<code>15005</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			Page Element not defined in dictionary
+		]]>
+		</help>
+		<message>Element [{}] not found in application dictionary</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_TEXT_VALUE">
+		<code>15006</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No such texts found on the Pop-up alerts</message>
+	</Error>
+	<Error id="POPUP_NOT_FOUND">
+		<code>15007</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No such Pop-up alerts are present</message>
+	</Error>
+	<Error id="FAILED_TO_SWITCH_ON_POP_UP">
+		<code>15008</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to switch on the Pop-up alert</message>
+	</Error>
+	<Error id="FAILED_TO_PLAY_VIDEO">
+		<code>15009</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>The video could not be played; play didn't work</message>
+	</Error>
+	<Error id="INVALID_ARITHMETIC_OPERATION_FOR_SLIDER_STATUS">
+		<code>15010</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to perform arithmetic operations for slider status</message>
+	</Error>
+	<Error id="MEDIA_POSITION_ERROR">
+		<code>15011</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to locate media position</message>
+	</Error>
+	<Error id="INVLAID_WAIT_TIME_DURATION">
+		<code>15012</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid wait time duration</message>
+	</Error>
+	<Error id="INVLAID_WAIT_TIME_RESUME">
+		<code>15013</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid wait time for resume in config. Setting it to default 15s</message>
+	</Error>
+	<Error id="BOOKMARKED_DATA_NOT_SAVED_ERROR">
+		<code>15014</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Bookmarked data not saved for this media</message>
+	</Error>
+	<Error id="BOOKMARK_TIME_RECORD_ERROR">
+		<code>15015</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Media was played till the end. Couldn't record bookmark time</message>
+	</Error>
+	<Error id="BOOKMARK_TIME_PARSE_ERROR">
+		<code>15016</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to parse the Bookmarked time</message>
+	</Error>
+	<Error id="START_FROM_BOOKMARK_ERROR">
+		<code>15017</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			Difference between current playing time and bookmarked time is out of range(5s)
+		]]>
+		</help>
+		<message>Player didn't start from bookmarked position</message>
+	</Error>
+	<Error id="INVALID_ARITHMETIC_OPERATION_FOR_BOOKMARKED_TIME">
+		<code>15018</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to perform arithmetic operations for Bookmarked time</message>
+	</Error>
+	<Error id="INVALID_ARITHMETIC_OPERATION_FOR_PLAYER_TIME">
+		<code>15019</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to perform arithmetic operations for player time</message>
+	</Error>
+	<Error id="PLAYER_TIME_PARSE_ERROR">
+		<code>15020</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to parse the player time</message>
+	</Error>
+	<Error id="PLAYER_START_POSITION_ERROR">
+		<code>15021</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Player didn't start from initial position</message>
+	</Error>
+	<Error id="PLAYING_TIME_SAVE_ERROR">
+		<code>15022</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to save current playing time as media timer position couldn't be found</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_PLAYER_STATE">
+		<code>15023</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to validate the Current State of Player</message>
+	</Error>
+	<Error id="TIME_VALIDATION_FAILED">
+		<code>15024</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate time difference</message>
+	</Error>
+	<Error id="INVALID_SLIDER_ACTION">
+		<code>15025</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>The action {} not available for Element {} slider</message>
+	</Error>
+	<Error id="FORWARD_REWIND_FAILURE">
+		<code>15026</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Element {} clicked but failed to validate the time-difference operation
+			Time before click: {} [{}]
+			Time after click: {} [{}]
+		</message>
+	</Error>
+	<Error id="ELEMENT_NOT_FOUND_ERROR">
+		<code>15027</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Element {} not found in page {}</message>
+	</Error>
+	<Error id="INVALID_ELEMENT_TABLE">
+		<code>15028</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Element {} table failed to be validated in page {}</message>
+	</Error>
+	<Error id="INVALID_ACTION_DIRECTIVE">
+		<code>15029</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Invalid action directive [{}] on element type [{}];
+			     Possible incorrect element type
+		</message>
+	</Error>
+	<Error id="MEDIA_PLAY_ERROR">
+		<code>15030</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Media could not be played due to : {}</message>
+	</Error>
+	<Error id="START_TIME_PARSE_ERROR">
+		<code>15031</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to parse start time {}</message>
+	</Error>
+	<Error id="FAILED_TO_CLICK_ELEMENT">
+		<code>15032</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to click element {}</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_MESSAGE_ID">
+		<code>15033</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to find message with ID "{}" from message bundle
+		</message>
+	</Error>
+	<Error id="DUPLICATE_TEST_DATA_OBJECT">
+		<code>15034</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Multiple test data found for {}. Possible duplicate entry in message bundle</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_DATA_OBJECT">
+		<code>15035</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>No data object found for {} across message bundle</message>
+	</Error>
+	<Error id="INVALID_PLAYER_STATE">
+		<code>15036</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Player is not in {} state</message>
+	</Error>
+	<Error id="PROGRAM_TITLE_NOT_FOUND">
+		<code>15037</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>No such program TITLE is displayed for the channel Id: {}</message>
+	</Error>
+	<Error id="PROGRAM_SCHEDULE_NOT_FOUND">
+		<code>15038</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>No such program SCHEDULE is displayed for the channel Id: {}</message>
+	</Error>
+	<Error id="PROGRAM_DURATION_VALIDATOR_NOT_FOUND">
+		<code>15039</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate against program duration : {} for the channel Id: {}</message>
+	</Error>
+	<Error id="PROGRAM_POSITION_VALIDATOR_NOT_FOUND">
+		<code>15040</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate against program position : {} for the channel Id: {}</message>
+	</Error>
+	<Error id="INVALID_SCHEDULE_TIME">
+		<code>15041</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate Schedule time interval : {} against program duration : {} for the channel Id: {}</message>
+	</Error>
+	<Error id="INVALID_PROGRAM_WAIT_TIME">
+		<code>15042</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate while waiting for the program to finish for the channel Id: {}</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_PROGRAM_BOUNDARY">
+		<code>15043</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate program boundary for channel Id: {}
+		</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_SLIDER_ELEMENT">
+		<code>15044</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Element {} Slider failed to be validated in page {}</message>
+	</Error>
+	<Error id="INVALID_ACTION_REQUEST">
+		<code>15045</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Invalid action request for element {}; Requested [Click] : Defined [{}]</message>
+	</Error>
+	<Error id="INVALID_PLAYER_STATE_SPECIFICATION">
+		<code>15046</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Invalid player state specified.</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_APP_LOGO">
+		<code>15047</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to find the logo for {}</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_ELEMENT">
+		<code>15048</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to find element : {}</message>
+	</Error>
+	<Error id="FAILED_TO_RECORD_TIME">
+		<code>15049</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to record current time as the required elements could not be found</message>
+	</Error>
+	<Error id="FAILED_TO_SKIP_REWIND">
+		<code>15050</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to skip-rewind due to: {}</message>
+	</Error>
+	<Error id="FAILED_TO_SKIP_FORWARD">
+		<code>15051</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to fast-forward due to: {}</message>
+	</Error>
+	<Error id="INSUFFICIENT_TIME_TO_REWIND_ERROR">
+		<code>15052</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to rewind media due to : Insufficient time played in this media to rewind for: {} second(s)</message>
+	</Error>
+	<Error id="INSUFFICIENT_TIME_TO_FAST_FORWARD_ERROR">
+		<code>15053</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to fast forward media due to : Insufficient time remaining in this media to fast forward for : {} second(s)</message>
+	</Error>
+	<Error id="CURRENT_TIME_PARSE_ERROR">
+		<code>15054</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to parse current and total time. Skipping boundary check</message>
+	</Error>
+	<Error id="TIME_DIFFERENCE_ERROR">
+		<code>15055</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Error while validating time difference before and after skip action</message>
+	</Error>
+	<Error id="CURRENT_TIME_VALIDATION_ERROR">
+		<code>15056</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to validate state as current playing time couldn't be recorded</message>
+	</Error>
+	<Error id="FAILED_TO_DRAG_SLIDER">
+		<code>15057</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to drag slider as the required elements couldn't be found</message>
+	</Error>
+	<Error id="FAILED_TO_PARSE_SLIDER_POSITION_DURATION">
+		<code>15058</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to parse the slider/'s {} at {} or {} at {}</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_PLAYER_STATUS">
+		<code>15059</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Player did not came up within {} seconds</message>
+	</Error>
+	<Error id="FAILED_TO_REWIND">
+		<code>15060</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to rewind media due to: {}</message>
+	</Error>
+	<Error id="FAILED_TO_FAST_FORWARD">
+		<code>15061</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to fast forward media due to: {}</message>
+	</Error>
+	<Error id="END_TIME_PARSE_ERROR">
+		<code>15062</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to parse end time {}</message>
+	</Error>
+	<Error id="FAILED_TO_TERMINATE_DRIVER">
+		<code>15063</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to terminate driver for application {}</message>
+	</Error>
+	<Error id="INVLAID_MAX_TIMEOUT">
+		<code>15064</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid player up max timeout in config. Setting it to	default 30s	</message>
+	</Error>
+	<Error id="INVLAID_MIN_TIMEOUT">
+		<code>15065</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid player up min timeout in config. Setting it to	default 15s</message>
+	</Error>
+	<Error id="FAILED_TO_GET_CLASS_DEFINITION">
+		<code>15066</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to get class definition from object {}</message>
+	</Error>
+	<Error id="FAILED_TO_GET_METHOD_DEFINITION">
+		<code>15067</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to get method {} in class {}</message>
+	</Error>
+	<Error id="FAILED_TO_EXECUTE_METHOD">
+		<code>15068</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to execute method {} in class {}</message>
+	</Error>
+	<Error id="FAILED_TO_ACCESS_METHOD_OR_INSTANCE">
+		<code>15069</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to access a method or member of class {} that visibility qualifiers do not allow</message>
+	</Error>
+	<Error id="EXCEPTION_IN_METHOD">
+		<code>15070</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Exception within method {}</message>
+	</Error>
+	<Error id="MEDIA_PLAYBACK_WAIT_ERROR">
+		<code>15071</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Exception in Media playback wait duration</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_FEATURE">
+		<code>15072</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to execute feature {}; No such feature found</message>
+	</Error>
+	<Error id="FAILED_TO_EXECUTE_FEATURE">
+		<code>15073</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to execute feature {}
+			Error:[ {} ]
+		</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_MESSAGE_BUNDLE">
+		<code>15074</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to find message bundle for WEB or MOBILEDEVICE
+		</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_PBR_ENTRY">
+		<code>15075</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>No valid PBR entries were found</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_IMC_STATUS_CODE">
+		<code>15076</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>No IMC Status Codes have been defined under configs</message>
+	</Error>
+	<Error id="INTERRUPTED_EXCEPTION">
+		<code>15077</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Interrupted Exception occurred due to : {}</message>
+	</Error>
+	<Error id="FILE_NOT_FOUND_EXCEPTION">
+		<code>15078</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>File Not Found Exception occurred due to : {}</message>
+	</Error>
+	<Error id="FAILED_TO_CATCH_LOGS">
+		<code>15079</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to catch logs from console</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_PARAMETER_VALUE">
+		<code>15080</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to validate all the parameter-value specified
+		</message>
+	</Error>
+
+	<Error id="STS_TOKEN_FIELD_MISSING">
+		<code>15081</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>STS token missing. Please ensure 'RefApp.OAuth.Token.Field'
+		</message>
+	</Error>
+	<Error id="INSUFFICIENT_TIME_TO_PLAY_ERROR">
+		<code>15082</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to play media due to : Insufficient time remaining in this media to play for: {} second(s)</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_SLIDER">
+		<code>15083</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Element [{}] slider failed to be validated due to : {}
+		</message>
+	</Error>
+	<Error id="FAILED_TO_PARSE_MEDIA_POSITION">
+		<code>15084</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to parse the media position [{}] after the drag	operation for element {}
+		</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_SLIDER_ACTION">
+		<code>15085</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate the Drag proportion or time-difference	[{}] within the specified tolerance for element {}
+		</message>
+	</Error>
+	<Error id="FAILED_TO_LOAD_SUBTITLE">
+		<code>15086</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to load the Subtitle: {} in this media</message>
+	</Error>
+	<Error id="EXCEPTION">
+		<code>15087</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Exception occurred due to : {}</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_ERROR_CODE">
+		<code>15088</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Failed to validate Error Code due to missing or incorrect	data-attributes</message>
+	</Error>
+	<Error id="INVALID_EVENT_TRIGGERED">
+		<code>15089</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>The following operation "{}" is not allowed in the	application "{}"</message>
+	</Error>
+	<Error id="EXECUTION_ERROR">
+		<code>15090</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Error while waiting current execution due to: {}</message>
+	</Error>
+	<Error id="FAILED_TO_CONNECT_TO_DEVICE">
+		<code>15091</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>
+			<br />
+			Failed to connect to device with Platform [{}] and version [{}]
+		</message>
+	</Error>
+		<Error id="ERROR_LOADING_APPLICATION">
+		<code>15092</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to load the {} application</message>
+	</Error>
+		<Error id="PROPERTY_NULL">
+		<code>15093</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Property was NULL</message>
+	</Error>
+	<Error id="PROPERTY_EMPTY">
+		<code>15094</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Property was EMPTY</message>
+	</Error>
+	<Error id="PLAYER_LIVE_TUNING_ERROR">
+		<code>15095</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Player is currently not in LIVE position</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_STATUS">
+		<code>15096</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate {} status from player log</message>
+	</Error>
+	<Error id="SEGMENT_DOWNLOAD_ERROR">
+		<code>15097</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>No new segments got downloaded after timeout interval</message>
+	</Error>
+	<Error id="FAILED_TO_GET_LOG_FILE">
+		<code>15098</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Unable to fetch player log file from device</message>
+	</Error>
+	<Error id="ILLEGAL_ARGUMENTS_ERROR">
+		<code>15099</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Illegal arguments passed to method {}</message>
+	</Error>
+	<Error id="IO_EXCEPTION">
+		<code>15100</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			 
+		]]>
+		</help>
+		<message>Input/Output Exception occurred due to : {}</message>
+	</Error>
+	<Error id="FAILED_TO_WAIT_FOR_MEDIA_END">
+		<code>15101</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Exception occurred while waiting till the media end</message>
+	</Error>
+	<Error id="INVALID_STATE_ERROR">
+		<code>15102</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Invalid state specified for this step-grammar</message>
+	</Error>
+	<Error id="INVALID_ELEMENT_ERROR">
+		<code>15103</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+		
+		]]>
+		</help>
+		<message>Failed to validate web-elements due to invalid web-elements or date-time parsing for Program Info. Error Message: {}</message>
+	</Error>
+	<Error id="LOG_FILE_CREATION_ERROR">
+		<code>15104</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Could not create temp Log File at [{}] as {}</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_START_TIME">
+		<code>15105</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to validate the Program Start time to UTC time within Program ID</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_PROGRAM_SCHEDULE">
+		<code>15106</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to validate the Program Schedule with the Duration</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_TIME">
+		<code>15107</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to validate time within specified tolerance of time-difference for LIVE position</message>
+	</Error>
+	<Error id="NO_PBR_EVENTS">
+		<code>15108</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No PBR events found. No error codes will be detected</message>
+	</Error>
+	<Error id="NO_EVENT_CLASS_FOR_ERROR_CODE">
+		<code>15109</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No categorical event class found for this error code: {}</message>
+	</Error>
+	<Error id="NO_ERROR_MESSAGE_FOR_ERROR_CODE">
+		<code>15110</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No error message found for this error code: {}</message>
+	</Error>
+	<Error id="NO_REFERENCE_FOR_ERROR_CODE">
+		<code>15111</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>{} has no reference for this error code: {}</message>
+	</Error>
+	<Error id="FAILED_TO_COPY_LOG_FILE">
+		<code>15112</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Failed to copy player log file to log folder due to: {}</message>
+	</Error>
+	<Error id="FAILED_TO_WRITE_ADB_LOGS">
+		<code>15113</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Error occurred while writing adb logs: {}</message>
+	</Error>
+	<Error id="INVALID_OPTION_ERROR">
+		<code>15114</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid option selected</message>
+	</Error>
+	<Error id="FAILED_TO_READ_LOGS">
+		<code>15115</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to read player log</message>
+	</Error>
+	<Error id="EMPTY_CONFIGURATION">
+		<code>15116</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>{} in config are EMPTY</message>
+	</Error>
+	<Error id="NULL_CONFIGURATION">
+		<code>15117</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>{} in config are NULL</message>
+	</Error>
+	<Error id="INVALID_TEST_ENVIRONMENT">
+		<code>15118</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Test Environments does not contain Environment {}</message>
+	</Error>
+	<Error id="INVALID_USER">
+		<code>15119</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Environment {} does not support User {}</message>
+	</Error>
+	<Error id="NO_VISIBLE_ALERT">
+		<code>15120</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No alert visible after {} sec</message>
+	</Error>
+	<Error id="INVALID_DOWNLOAD_TIMEOUT">
+		<code>15121</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Invalid Download Timeout Value [{}], setting Download Timeout value to default</message>
+	</Error>
+	<Error id="MEDIA_DOWNLOAD_ERROR">
+		<code>15122</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Media download stopped unexpectedly</message>
+	</Error>
+	<Error id="FAILED_TO_FIND_CURRENT_MEDIA_DETAILS">
+		<code>15123</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to find current media details</message>
+	</Error>
+	<Error id="FAILED_TO_GET_FILES_AND_FOLDERS">
+		<code>15124</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to fetch list of files and folders in download folder</message>
+	</Error>
+	<Error id="DOWNLOADED_FILES_NULL_OR_EMPTY">
+		<code>15125</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Download files list in config is null or empty</message>
+	</Error>
+	<Error id="NO_SUCH_FILE_IN_DOWNLOADED_FOLDER">
+		<code>15126</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>File {} does not exist in the downloaded folder</message>
+	</Error>
+	<Error id="FAILED_TO_GET_FILE_COUNT">
+		<code>15127</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to get Files count in Quality Folders</message>
+	</Error>
+	<Error id="SEGMENT_COUNT_MISMATCH">
+		<code>15128</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>No. of segments downloaded doesn't match the expected number of segments saved in previous step</message>
+	</Error>
+	<Error id="FAILED_TO_VALIDATE_OFFLINE_PLAY">
+		<code>15129</code>
+		<image ref="" height="0" width="0" />
+		<help>
+		<![CDATA[
+			
+		]]>
+		</help>
+		<message>Unable to validate offline play of downloaded media from logs</message>
+	</Error>
+</ErrorOrWarning>

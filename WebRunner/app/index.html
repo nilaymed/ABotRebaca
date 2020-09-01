@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="fixed header-dark sidebar-left-collapsed">
+    <head>
+        <!-- Basic -->
+        <meta charset="UTF-8">
+
+        <title>Abot Report</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <!-- Web Fonts  -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />		
+
+        <!-- Theme CSS -->
+        <link rel="stylesheet" href="assets/stylesheets/theme.css" />
+        <link rel="stylesheet" href="assets/stylesheets/custom.css" />
+        <link rel="stylesheet" href="assets/stylesheets/tree-ui.css" />
+
+        <!-- Head Libs -->
+        <script src="assets/vendor/modernizr/modernizr.js"></script>		
+
+
+    </head>
+    <body style="overflow:hidden;">
+        <section class="body">
+
+            <!-- start: header -->
+            <header class="header">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="assets/logo.png" height="56" alt="ABot" /> 
+                    </a>
+                    <p class="logo-text" >Abot Report Interface</p>
+                    <div id="release-no" class="release-no-text">
+
+                    </div>
+                    <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                        <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>	
+            </header>
+            <!-- end: header -->
+
+            <div class="inner-wrapper">
+                <!-- start: sidebar -->
+                <aside id="sidebar-left" class="sidebar-left">				
+                    <div class="sidebar-header">
+                        <div class="sidebar-title">
+                            Navigation
+                        </div>
+                        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+                        </div>
+                    </div>
+
+                    <div class="nano">
+                        <div class="nano-content">
+                            <nav id="menu" class="nav-main" role="navigation">
+                                <ul class="nav nav-main doc">
+                                    <li class="nav-parent">
+                                        <a>
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                        <ul class="nav nav-children">
+                                            <li>
+                                                <a href="#artifacts/featureOverview" class="fSwitch" data-file="feature-overview.html" data-subTitle="Feature Overview">
+                                                    Feature Overview
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#artifacts/tagOverview" class="fSwitch" data-file="tag-overview.html" data-subTitle="Tag Overview">
+                                                    Tag Overview
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>                         
+                                    <li>
+                                        <a href="#artifacts" class="root-link" id="artifactsFiles" data-root="../artifacts/" data-pageHeaderText="Artifacts">
+                                            <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                            <span>Artifacts</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#featureFiles" class="root-link" id="featureFiles" data-root="../featureFiles/" data-pageHeaderText="Feature Files">
+                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            <span>Feature Files</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#config" class="root-link" id="configFiles" data-root="../config/" data-pageHeaderText="Config">
+                                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                                            <span>Config</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>				
+
+                        </div>
+
+                    </div>
+
+                </aside>
+                <!-- end: sidebar -->
+
+                <section role="main" class="content-body">
+                    <header class="page-header">
+                        <h2 class="page-header-text"></h2>
+
+                         <div class="right-wrapper pull-right">
+                            <ol class="breadcrumbs">
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa fa-home"></i>
+                                    </a>
+                                </li>
+                                <!--<li><span class="breadcrumbText"></span></li>-->
+                            </ol>	
+                        </div>
+                    </header>
+
+                    <!-- start: page -->
+                                      
+                    <div class="row">
+                        <div class="col-md-12 landing-wrapper hidden">
+                            <section class="panel panel-primary">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title"><i class="fa fa-dashboard" aria-hidden="true"></i>
+                                        <span class="panel-heading-text"></span>
+                                    </h2>
+                                </header>
+                                <div class="panel-body file-show-container container-scroll">
+                                    <div id="file-content-mask" style="width:90%"></div>
+                                    <div id="landing-file-container"></div>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <div class="col-md-3 file-tree-wrapper">
+                            <section class="panel panel-primary">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title"><i class="fa fa-search" aria-hidden="true"></i> File Browse</h2>
+                                </header>
+                                <div class="panel-body filetreecontainer" id="directoryTreeContainer_1">
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-9 file-tree-wrapper">
+                            <section class="panel panel-primary">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title">
+                                        <i class="fa fa-file-text-o" aria-hidden="true"></i> 
+                                        <span id="panel-title">File</span> 
+                                        <!--<span id="download-link" class="pull-right"></span>-->
+                                    </h2>
+                                </header>
+                                <div class="panel-body file-show-container container-scroll download-space">
+                                    <div id="read-message"></div>                                    
+                                    <div id="file-contentmask"></div>
+                                    <div id="file-content"></div>
+                                    <div id="download-link"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+
+                    <!-- end: page -->
+                </section>
+            </div>
+
+
+        </section>
+
+        <!-- Vendor -->
+        <script src="assets/vendor/jquery/jquery.js"></script>		
+        <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>		
+        <script src="assets/vendor/nanoscroller/nanoscroller.js"></script>		
+
+        <!-- Theme Base, Components and Settings -->
+        <script src="assets/javascripts/theme.js"></script>
+        <script src="assets/javascripts//jquery.easing.js"></script>
+        <script src="assets/javascripts//jqueryFileTree.js"></script>
+        <script src="assets/javascripts/ajaxRequest.js"></script>
+        <script src="assets/javascripts/common.js"></script>        
+    </body>
+
+</html>

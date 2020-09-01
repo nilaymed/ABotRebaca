@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 13 18:28:14 IST 2019
+guava-r09.jar>plugin-file-repo=
+guava-r09.pom>plugin-file-repo=

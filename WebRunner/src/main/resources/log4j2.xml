@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+  <CustomLevels>
+    <CustomLevel name="REPORT" intLevel="250" />
+  </CustomLevels>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout>
+                <ScriptPatternSelector defaultPattern="%d{dd-MMM-yyyy HH:mm:ss} [%t] %-5p: %m%n">
+                        <Script name="LevelSelector" language="javascript"><![CDATA[
+                            result=null;
+                            switch (logEvent.getLevel())
+                            {
+                                case org.apache.logging.log4j.Level.FATAL:
+                                case org.apache.logging.log4j.Level.ERROR:
+                                case org.apache.logging.log4j.Level.WARN:
+                                case org.apache.logging.log4j.Level.INFO:
+                                case org.apache.logging.log4j.Level.DEBUG:
+                                case org.apache.logging.log4j.Level.TRACE:
+                                result=logEvent.getLevel();
+                                      break;
+                                default:result=null;                                            
+                            }
+                            result;
+                            ]]>
+                        </Script>
+                        <PatternMatch key="FATAL" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="ERROR" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="WARN" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="INFO" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="DEBUG" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="TRACE" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                    </ScriptPatternSelector>
+            </PatternLayout>
+        </Console>
+        <File name="TestAutomationLog" fileName="./log/TestAutomationLog.log">
+             <PatternLayout>
+                <ScriptPatternSelector defaultPattern="%d{dd-MMM-yyyy HH:mm:ss} [%t] %-5p: %m%n">
+                        <Script name="LevelSelector" language="javascript"><![CDATA[
+                            result=null;
+                            switch (logEvent.getLevel())
+                            {
+                                case org.apache.logging.log4j.Level.FATAL:
+                                case org.apache.logging.log4j.Level.ERROR:
+                                case org.apache.logging.log4j.Level.WARN:
+                                case org.apache.logging.log4j.Level.INFO:
+                                case org.apache.logging.log4j.Level.DEBUG:
+                                case org.apache.logging.log4j.Level.TRACE:
+                                result=logEvent.getLevel();
+                                      break;
+                                default:result=null;                                            
+                            }
+                            result;
+                            ]]>
+                        </Script>
+                        <PatternMatch key="FATAL" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="ERROR" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="WARN" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="INFO" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="DEBUG" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                        <PatternMatch key="TRACE" pattern="%d{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+                    </ScriptPatternSelector>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    
+     <loggers>     
+       <root level="info">
+          <AppenderRef ref="Console"/>
+          <AppenderRef ref="TestAutomationLog"/>
+       </root>  
+	   <logger name="com.rebaca.adapters.base" level="report" />
+	   <logger name="com.rebaca.gluecode" level="report" /> 
+   </loggers>
+</Configuration>
+

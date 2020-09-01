@@ -1,0 +1,30 @@
+<div data-ng-controller="DashboardTagCtrl" data-ng-init="init()">
+	<section class="content" style="height: 100%; min-height: 100%">
+
+		<div id="dashboardTagContentView" class="row" style="height: 100%">
+			<div class="col-md-12">
+				<div class="box box-danger">
+					<div class="box-header with-border">
+						<div class="pull-left">
+							<h5 class="box-title pull-left">Dashboard Tag</h5>
+						</div>
+						<div class="box-tools pull-right">
+							<button type="button" class="btn btn-box-tool"
+								data-widget="collapse">
+								<i class="fa fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<div id="dashboardTagBody" class="box-body" style="height: 100%;">
+						<div id="dashboardTagContent" class="row panel-container" style="height: 100%;">
+							<div id="dashboardTagFile" class="col-md-12" style="height: 100%">
+								<object style="height: 100%;width: 100%; overflow: auto;border:none" data="" ng-change="tagloaded()" ng-model="tagData"
+											id="dashboardTagFeature"></object>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

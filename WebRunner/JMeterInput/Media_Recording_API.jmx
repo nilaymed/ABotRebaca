@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments" />
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments" />
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath" />
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Media_API_Recording" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration" />
+        <stringProp name="ThreadGroup.delay" />
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+          <collectionProp name="AuthManager.auth_list">
+            <elementProp name="" elementType="Authorization">
+              <stringProp name="Authorization.url" />
+              <stringProp name="Authorization.username">${OWNER_NAME}</stringProp>
+              <stringProp name="Authorization.password">mongoose1</stringProp>
+              <stringProp name="Authorization.domain" />
+              <stringProp name="Authorization.realm" />
+              <stringProp name="Authorization.mechanism">BASIC_DIGEST</stringProp>
+            </elementProp>
+          </collectionProp>
+          <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+        </AuthManager>
+        <hashTree />
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="amm_ip" elementType="Argument">
+              <stringProp name="Argument.name">amm_ip</stringProp>
+              <stringProp name="Argument.value">192.168.50.124</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="amm_port" elementType="Argument">
+              <stringProp name="Argument.name">amm_port</stringProp>
+              <stringProp name="Argument.value">2010</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="OWNER_NAME" elementType="Argument">
+              <stringProp name="Argument.name">OWNER_NAME</stringProp>
+              <stringProp name="Argument.value">azuki</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="C_PROFILE_NAME" elementType="Argument">
+              <stringProp name="Argument.name">C_PROFILE_NAME</stringProp>
+              <stringProp name="Argument.value">extI_vspp_mg1-cp</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="RETRI_URI" elementType="Argument">
+              <stringProp name="Argument.name">RETRI_URI</stringProp>
+              <stringProp name="Argument.value">http://172.29.3.199</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PLATFORM_NAME" elementType="Argument">
+              <stringProp name="Argument.name">PLATFORM_NAME</stringProp>
+              <stringProp name="Argument.value">extI_vspp_scpgwmg-PLF1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="C_PROFILE_NAME_1" elementType="Argument">
+              <stringProp name="Argument.name">C_PROFILE_NAME_1</stringProp>
+              <stringProp name="Argument.value">extI_vspp_mg1-cp_1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree />
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="415978098">&lt;error&gt;</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.custom_message" />
+          <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">6</intProp>
+        </ResponseAssertion>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cdn_profile_create profile" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;cdn_profile&gt;&#xD;
+&lt;name&gt;test-user-name12&lt;/name&gt;&#xD;
+ &lt;username&gt;usernametest12&lt;/username&gt;&#xD;
+ &lt;password&gt;Abc@1234&lt;/password&gt;&#xD;
+ &lt;upload_address&gt;http://mytestcdn.com/&lt;/upload_address&gt;&#xD;
+ &lt;upload_base_directory&gt;mytestcdn1/&lt;/upload_base_directory&gt;&#xD;
+ &lt;retrieval_address&gt;http://testingcdn1/&lt;/retrieval_address&gt;&#xD;
+ &lt;retrieval_base_directory&gt;testingcdn1/&lt;/retrieval_base_directory&gt;&#xD;
+ &lt;enabled&gt;true&lt;/enabled&gt;&#xD;
+&lt;/cdn_profile&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">owner/cdn_profile?owner_uid=${OWNER_NAME}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Live Create" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;media&gt;&#xD;
+ &lt;name&gt;test1&lt;/name&gt;&#xD;
+ &lt;program_segmentation&gt;none&lt;/program_segmentation&gt;&#xD;
+ &lt;activate_date&gt;2010-05-01 01:30:00&lt;/activate_date&gt;&#xD;
+ &lt;deactivate_date&gt;2026-05-05 01:29:00&lt;/deactivate_date&gt;&#xD;
+ &lt;live_start_time&gt;2015-07-15 00:00:00&lt;/live_start_time&gt;&#xD;
+ &lt;live_end_time&gt;2035-07-15 00:00:00&lt;/live_end_time&gt;&#xD;
+ &lt;expire_date&gt;&lt;/expire_date&gt;&#xD;
+ Mention expire date&#xD;
+ &lt;admin_disable&gt;false&lt;/admin_disable&gt;&#xD;
+ &lt;cdn_profiles&gt;&#xD;
+    &lt;cdn_profile&gt;test-user-name12&lt;/cdn_profile&gt;&#xD;
+ &lt;/cdn_profiles&gt;&#xD;
+ &lt;external&gt;&#xD;
+    &lt;source_duration&gt;&lt;/source_duration&gt;&#xD;
+    &lt;external_media_path&gt;&lt;![CDATA[LIVE$aio_mdrm/10.m3u8?device=HLS_CLEAR]]&gt;&lt;/external_media_path&gt;&#xD;
+ &lt;/external&gt;&#xD;
+&lt;/media&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">/media/create?owner_uid=${OWNER_NAME}&amp;media_uid=test1&amp;external=true</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Recording Create" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;recording&gt;&#xD;
+&lt;start_time&gt;2020-04-23T16:05:00.00Z&lt;/start_time&gt;&#xD;
+&lt;end_time&gt;2020-04-24T16:15:00.00Z&lt;/end_time&gt;&#xD;
+&lt;channel_uid&gt;test1&lt;/channel_uid&gt;&#xD;
+&lt;uid&gt;uuid_5_0&lt;/uid&gt;&#xD;
+&lt;primary&gt;test&lt;/primary&gt;&#xD;
+&lt;shared&gt;true&lt;/shared&gt;&#xD;
+&lt;vspp_device_profile&gt;MRR_ENC_REC&lt;/vspp_device_profile&gt;&#xD;
+&lt;showing_id&gt;show1&lt;/showing_id&gt;&#xD;
+&lt;variant&gt;SD&lt;/variant&gt;&#xD;
+&lt;cdn_group&gt;cdn_group_1&lt;/cdn_group&gt;&#xD;
+&lt;drm_group&gt;drm_group_3&lt;/drm_group&gt;&#xD;
+&lt;expiration&gt;2030-01-01T02:00:00Z&lt;/expiration&gt;&#xD;
+&lt;/recording&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">media/recording?owner_uid=${OWNER_NAME}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Recording update" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;recording&gt;&#xD;
+&lt;start_time&gt;2015-11-04T16:05:00.00Z&lt;/start_time&gt;&#xD;
+&lt;end_time&gt;2015-11-04T16:15:00.00Z&lt;/end_time&gt;&#xD;
+&lt;channel_uid&gt;test1&lt;/channel_uid&gt;&#xD;
+&lt;uid&gt;uuid_3_0&lt;/uid&gt;&#xD;
+&lt;primary&gt;test&lt;/primary&gt;&#xD;
+&lt;shared&gt;true&lt;/shared&gt;&#xD;
+&lt;vspp_device_profile&gt;MRR_ENC_REC&lt;/vspp_device_profile&gt;&#xD;
+&lt;showing_id&gt;show1&lt;/showing_id&gt;&#xD;
+&lt;variant&gt;HD&lt;/variant&gt;&#xD;
+&lt;cdn_group&gt;cdn_group_1&lt;/cdn_group&gt;&#xD;
+&lt;drm_group&gt;drm_group_3&lt;/drm_group&gt;&#xD;
+&lt;expiration&gt;2030-01-01T02:00:00Z&lt;/expiration&gt;&#xD;
+&lt;/recording&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">media/recording?owner_uid=${OWNER_NAME}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Recording Retrive" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments" />
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">media/recording?owner_uid=${OWNER_NAME}&amp;uid=uuid_3_0</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Recording Destroy" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;recording&gt;&lt;/recording&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">media/recording_destroy?owner_uid=${OWNER_NAME}&amp;uid=uuid_5_0&amp;primary=test</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="media - Live Delete" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;delete&gt;&lt;/delete&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">media/delete?owner_uid=${OWNER_NAME}&amp;media_uid=test1</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cdn_profile destroy profile" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;cdn&gt;&lt;/cdn&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${amm_ip}</stringProp>
+          <stringProp name="HTTPSampler.port">${amm_port}</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding" />
+          <stringProp name="HTTPSampler.path">owner/cdn_profile_destroy?owner_uid=${OWNER_NAME}&amp;name=test-user-name12</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re" />
+          <stringProp name="HTTPSampler.connect_timeout" />
+          <stringProp name="HTTPSampler.response_timeout" />
+        </HTTPSamplerProxy>
+        <hashTree />
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Projects\AbotOTTMasterCommon\Bosch-TSG\automation\ABOT-RunScenarios\JMeterOutput\JMeter_Sample2.xml</stringProp>
+        </ResultCollector>
+        <hashTree />
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

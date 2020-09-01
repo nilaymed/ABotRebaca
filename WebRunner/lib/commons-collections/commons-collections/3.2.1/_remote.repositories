@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 13 18:28:14 IST 2019
+commons-collections-3.2.1.jar>file-repo=
+commons-collections-3.2.1.jar>plugin-file-repo=
+commons-collections-3.2.1.pom>file-repo=

@@ -1,0 +1,13 @@
+[Unit]
+Description=ABot UI Service
+After=network.target sshd.service
+
+[Service]
+User=root
+WorkingDirectory=/etc/rebaca-test-suite/abot
+ExecStart=/etc/rebaca-test-suite/abot/start_abot_ui.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

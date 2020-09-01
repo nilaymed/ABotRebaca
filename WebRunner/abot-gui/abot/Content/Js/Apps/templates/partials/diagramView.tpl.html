@@ -1,0 +1,20 @@
+<div data-ng-controller="DashboardCtrl">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Dashboard
+            <!--<small>dashboard</small>-->
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <ng-include src="'Content/Js/Apps/templates/partials/diagram/diagram.tpl.html'"></ng-include>
+            </div>
+        </div>
+    </section>
+</div>

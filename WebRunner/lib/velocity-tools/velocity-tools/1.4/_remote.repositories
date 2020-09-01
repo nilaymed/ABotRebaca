@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 13 18:28:14 IST 2019
+velocity-tools-1.4.jar>plugin-file-repo=
+velocity-tools-1.4.jar>file-repo=
+velocity-tools-1.4.pom>file-repo=

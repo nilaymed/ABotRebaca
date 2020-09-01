@@ -1,0 +1,35 @@
+<div ng-controller="GraphCtrl" ng-init="" id="graphView">
+	<section class="content" style="height: 100%; min-height: 100%">
+
+		<div id="graphContentView" class="row" style="height: 100%">
+			<div class="col-md-12">
+				<div class="box box-danger">
+					<div class="box-header with-border">
+						<div class="pull-left">
+							<h5 class="box-title pull-left">Load Statistics&#160&#160&#160&#160</h5>
+							<h8></h8>
+						</div>
+					</div>
+					<div id="graphBody" class="box-body" style="height: 100%;">
+						<div id="graphContent_row_1" class="row panel-container" style="height: 100%;">
+							<div id="packet_counters_bar_graph" class="col-md-6">
+								<canvas id="packet_counters_bar" class="chart-horizontal-bar" chart-data="packet_counters.data" chart-labels="packet_counters.label" chart-options="packet_counters.options" chart-colors="packet_counters.colors" chart-dataset-override="packet_counters.datasetOverride"></canvas>
+							</div>
+							<div id ="transaction_counts_line_graph" class="col-md-6" style="height: 100%">
+								<div id="graphContent_row_2" class="row panel-container" style="height: 100%;margin-bottom:110px;">
+									<canvas id="transaction_counts_line" class="chart chart-line" chart-data="transaction_count.data" chart-labels="transaction_count.label" chart-series="transaction_count.series" chart-options="transaction_count.options" chart-colors="transaction_count.colors" chart-dataset-override="transaction_count.datasetOverride"></canvas>								
+								</div>
+								<div id="graphContent_row_3" class="row panel-container" style="height: 100%;margin-bottom:110px;">
+									<canvas id="uplink_downlink_bandwidth_line" class="chart chart-line" chart-data="uplink_downlink_bandwidth.data" chart-labels="uplink_downlink_bandwidth.label" chart-series="uplink_downlink_bandwidth.series" chart-options="uplink_downlink_bandwidth.options" chart-colors="uplink_downlink_bandwidth.colors" chart-dataset-override="uplink_downlink_bandwidth.datasetOverride"></canvas>
+								</div>
+								<div id="graphContent_row_4" class="row panel-container" style="height: 100%;margin-bottom:110px;">
+									<canvas id="procedure_completions_per_second_line" class="chart chart-line" chart-data="procedure_completions.data" chart-labels="procedure_completions.label" chart-series="procedure_completions.series" chart-options="procedure_completions.options" chart-colors="procedure_completions.colors" chart-dataset-override="procedure_completions.datasetOverride"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<test-data>
+	<data id="msg01" adapter="WEBSERVICECLIENT">
+		<rest>
+			<headers>
+			   <header key="Content-Type" value="text/xml" />
+			</headers>
+			<query-params>
+			</query-params>
+			<message type="xml">
+				<Emp id="0">
+					<name>Sandip</name>
+					<age>25</age>
+					<role>Developer</role>
+					<gen>Male</gen>
+				</Emp>
+			</message>
+		</rest>
+	</data>
+	<data id="msg02" adapter="WEBSERVICECLIENT">
+		<rest>
+			<headers>
+				<header key="Content-Type" value="application/json" />
+			</headers>
+			<query-params>
+			</query-params>
+			<message type="json">
+				{"auth":{"passwordCredentials":{"username":
+				"admin","password": "openstack"},"tenantName": "admin"}}
+			</message>
+		</rest>
+	</data>
+	<data id="msg03" adapter="WEBSERVICECLIENT">
+		<soap>
+			<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+				<soapenv:Header />
+				<soapenv:Body>
+					<gs:getCountryRequest>
+						<gs:name>Spain</gs:name>
+					</gs:getCountryRequest>
+				</soapenv:Body>
+			</soapenv:Envelope>
+		</soap>
+	</data>
+	<data id="msg04" adapter="WEBSERVICECLIENT">
+		<soap>
+			<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+				<SOAP-ENV:Header />
+				<SOAP-ENV:Body>
+					<ns2:getCountryResponse
+						xmlns:ns2="http://spring.io/guides/gs-producing-web-service">
+						<ns2:country>
+							<ns2:name>Spain</ns2:name>
+							<ns2:population>46704314</ns2:population>
+							<ns2:capital>Madrid</ns2:capital>
+							<ns2:currency>EUR</ns2:currency>
+						</ns2:country>
+					</ns2:getCountryResponse>
+				</SOAP-ENV:Body>
+			</SOAP-ENV:Envelope>
+		</soap>
+	</data>
+   <data id="msg05" adapter="WEBSERVICECLIENT">
+		<rest>
+			<headers>
+				<header key="Content-Type" value="application/json" />
+			</headers>
+			<query-params>
+			</query-params>
+			<message type="json">
+				{"access": {"token": {"issued_at": "2017-05-24T07:17:25.000000Z", "expires": "2017-05-24T08:17:25Z", "id": "45ce3b7967874cf38687c4f9f55dbdaa", "tenant": {"description": "Created by Juju", "enabled": true, "id": "aa03e4ed95604402abb0f8de0514fe5a", "name": "admin"}, "audit_ids": ["fO6HpPgWRCO8ZX5SUXJe1A"]}, "serviceCatalog": [{"endpoints": [{"adminURL": "http://192.168.30.136:8774/v2/aa03e4ed95604402abb0f8de0514fe5a", "region": "RegionOne", "internalURL": "http://192.168.30.136:8774/v2/aa03e4ed95604402abb0f8de0514fe5a", "id": "279d3669da2b4351b59866fe040b25c0", "publicURL": "http://192.168.30.136:8774/v2/aa03e4ed95604402abb0f8de0514fe5a"}], "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL": "http://192.168.30.147:9696", "region": "RegionOne", "internalURL": "http://192.168.30.147:9696", "id": "24ca0c6c73f2493697736ceb4f98c673", "publicURL": "http://192.168.30.147:9696"}], "endpoints_links": [], "type": "network", "name": "neutron"}, {"endpoints": [{"adminURL": "http://192.168.30.146:8776/v2/aa03e4ed95604402abb0f8de0514fe5a", "region": "RegionOne", "internalURL": "http://192.168.30.146:8776/v2/aa03e4ed95604402abb0f8de0514fe5a", "id": "92e0a83454844d8b9e5ab0e9c6920b3b", "publicURL": "http://192.168.30.146:8776/v2/aa03e4ed95604402abb0f8de0514fe5a"}], "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints": [{"adminURL": "http://192.168.30.145:9292", "region": "RegionOne", "internalURL": "http://192.168.30.145:9292", "id": "2423923ae57c46c9947ebadef1f18eae", "publicURL": "http://192.168.30.145:9292"}], "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"adminURL": "http://192.168.30.146:8776/v1/aa03e4ed95604402abb0f8de0514fe5a", "region": "RegionOne", "internalURL": "http://192.168.30.146:8776/v1/aa03e4ed95604402abb0f8de0514fe5a", "id": "312ecdcfed304334a416de3f9af0ee8c", "publicURL": "http://192.168.30.146:8776/v1/aa03e4ed95604402abb0f8de0514fe5a"}], "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints": [{"adminURL": "http://192.168.30.137:80/swift", "region": "RegionOne", "internalURL": "http://192.168.30.137:80/swift/v1", "id": "9b48b8a02d314696bc8b7c4909ea5397", "publicURL": "http://192.168.30.137:80/swift/v1"}], "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints": [{"adminURL": "http://192.168.30.142:35357/v2.0", "region": "RegionOne", "internalURL": "http://192.168.30.142:5000/v2.0", "id": "1d0b94b50670406e8abaa0335b9c04fa", "publicURL": "http://192.168.30.142:5000/v2.0"}], "endpoints_links": [], "type": "identity", "name": "keystone"}], "user": {"username": "admin", "roles_links": [], "id": "7afe72b1d1f14f23a8e8e77a812a6ff4", "roles": [{"name": "_member_"}, {"name": "Admin"}], "name": "admin"}, "metadata": {"is_admin": 0, "roles": ["9fe2ff9ee4384b1894a90878d3e92bab", "3b87d6182345464f8f45dff4d03c0573"]}}}
+			</message>
+		</rest>
+	</data>
+	
+	<data id="msg06" adapter="WEBSERVICECLIENT">
+		<rest>
+			<headers>
+				<header key="Content-Type" value="application/json" />
+			</headers>
+			<query-params>
+			</query-params>
+			<message type="json">
+				{"cityName":"Barrackpore","pinCode":"700123","distName":"West Bengal"}
+			</message>
+		</rest>
+	</data>
+</test-data>
+

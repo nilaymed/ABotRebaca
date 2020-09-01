@@ -1,0 +1,1062 @@
+{
+  "indexes":{
+    "access": {
+      "mappings": {
+        "access": {
+          "_meta":{
+            "recommendations": {
+               "Status_Code": "501,503,401",
+               "Size": " >= 15000" 
+            }            
+          },          
+          "properties": {
+            "@timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis"
+            },
+            "@version": {
+              "type": "string"
+            },
+            "IP_Address": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Id": {
+              "type": "integer"
+            },
+            "Request": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Request_analyzed": {
+              "type": "string"
+            },
+            "Size": {
+              "type": "integer"
+            },
+            "Status_Code": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis||date_hour_minute_second_millis||yyyy-MM-dd HH:mm:ss.SSS"
+            },
+            "User_Agent": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "awp_db": {
+      "mappings": {
+        "awp_db": {
+          "_meta":{
+            "recommendations": {
+               "Log_Level": "Fatal, Error"             
+            }            
+          },             
+          "properties": {
+            "@timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis"
+            },
+            "@version": {
+              "type": "string"
+            },
+            "Id": {
+              "type": "integer"
+            },
+            "Log_Description": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Log_Description_Analyzed": {
+              "type": "string"
+            },
+            "Log_Level": {
+              "type": "string"
+            },
+            "Timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis||date_hour_minute_second_millis||YYYY-MM-dd HH:mm:ss.SSS"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "error": {
+      "mappings": {
+        "error": {
+          "_meta":{
+            "recommendations": {
+               "Log_Level": "Error"             
+            }            
+          }, 
+          "properties": {
+            "@timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis"
+            },
+            "@version": {
+              "type": "string"
+            },
+            "Id": {
+              "type": "integer"
+            },
+            "Log_Description": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Log_Description_Analyzed": {
+              "type": "string"
+            },
+            "Log_Level": {
+              "type": "string"
+            },
+            "Timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis||date_hour_minute_second_millis||yyyy-MM-dd HH:mm:ss.SSS"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    ".kibana": {
+      "mappings": {
+        "search": {
+          "properties": {
+            "columns": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "hits": {
+              "type": "integer"
+            },
+            "kibanaSavedObjectMeta": {
+              "properties": {
+                "searchSourceJSON": {
+                  "type": "string"
+                }
+              }
+            },
+            "sort": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "version": {
+              "type": "integer"
+            }
+          }
+        },
+        "config": {
+          "properties": {
+            "buildNum": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "defaultIndex": {
+              "type": "string"
+            },
+            "visualization:colorMapping": {
+              "type": "string"
+            }
+          }
+        },
+        "visualization": {
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "kibanaSavedObjectMeta": {
+              "properties": {
+                "searchSourceJSON": {
+                  "type": "string"
+                }
+              }
+            },
+            "savedSearchId": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "uiStateJSON": {
+              "type": "string"
+            },
+            "version": {
+              "type": "integer"
+            },
+            "visState": {
+              "type": "string"
+            }
+          }
+        },
+        "index-pattern": {
+          "properties": {
+            "fieldFormatMap": {
+              "type": "string"
+            },
+            "fields": {
+              "type": "string"
+            },
+            "intervalName": {
+              "type": "string"
+            },
+            "notExpandable": {
+              "type": "boolean"
+            },
+            "timeFieldName": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          }
+        },
+        "dashboard": {
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "hits": {
+              "type": "integer"
+            },
+            "kibanaSavedObjectMeta": {
+              "properties": {
+                "searchSourceJSON": {
+                  "type": "string"
+                }
+              }
+            },
+            "optionsJSON": {
+              "type": "string"
+            },
+            "panelsJSON": {
+              "type": "string"
+            },
+            "timeFrom": {
+              "type": "string"
+            },
+            "timeRestore": {
+              "type": "boolean"
+            },
+            "timeTo": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "uiStateJSON": {
+              "type": "string"
+            },
+            "version": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "awp": {
+      "mappings": {
+        "awp": {
+          "_meta":{
+            "recommendations": {
+              "Log_Level": "Error"
+            }            
+          },             
+          "properties": {
+            "@timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis"
+            },
+            "@version": {
+              "type": "string"
+            },
+            "Component": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Id": {
+              "type": "integer"
+            },
+            "Log_Description": {
+              "type": "string",
+              "index": "not_analyzed"
+            },
+            "Log_Description_Analyzed": {
+              "type": "string"
+            },
+            "Log_Level": {
+              "type": "string"
+            },
+            "Timestamp": {
+              "type": "date",
+              "format": "strict_date_optional_time||epoch_millis||date_hour_minute_second_millis||YYYY-MM-dd HH:mm:ss.SSS"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "search":{
+    "access": {
+        "took": 5,
+        "timed_out": false,
+        "_shards": {
+          "total": 5,
+          "successful": 5,
+          "failed": 0
+        },
+        "hits": {
+          "total": 87745,
+          "max_score": 1,
+          "hits": [
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "126",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:40:40.000Z",
+                "type": "access",
+                "Id": 126,
+                "Timestamp": "2016-11-13 12:10:40.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=13&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1778219,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=13&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "129",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:41:49.000Z",
+                "type": "access",
+                "Id": 129,
+                "Timestamp": "2016-11-13 12:11:49.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=15&per_page=1000 HTTP/1.0",
+                "Status_Code": 401,
+                "Size": 481,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=15&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "130",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:41:49.000Z",
+                "type": "access",
+                "Id": 130,
+                "Timestamp": "2016-11-13 12:11:49.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=15&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1754492,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=15&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "132",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:42:21.000Z",
+                "type": "access",
+                "Id": 132,
+                "Timestamp": "2016-11-13 12:12:21.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=16&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1756035,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=16&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "143",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:45:30.000Z",
+                "type": "access",
+                "Id": 143,
+                "Timestamp": "2016-11-13 12:15:30.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=22&per_page=1000 HTTP/1.0",
+                "Status_Code": 401,
+                "Size": 481,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=22&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "144",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:45:30.000Z",
+                "type": "access",
+                "Id": 144,
+                "Timestamp": "2016-11-13 12:15:30.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=22&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1758054,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=22&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "145",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:45:57.000Z",
+                "type": "access",
+                "Id": 145,
+                "Timestamp": "2016-11-13 12:15:57.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=23&per_page=1000 HTTP/1.0",
+                "Status_Code": 401,
+                "Size": 481,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=23&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "149",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:46:47.000Z",
+                "type": "access",
+                "Id": 149,
+                "Timestamp": "2016-11-13 12:16:47.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=25&per_page=1000 HTTP/1.0",
+                "Status_Code": 401,
+                "Size": 481,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=25&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "166",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:50:53.000Z",
+                "type": "access",
+                "Id": 166,
+                "Timestamp": "2016-11-13 12:20:53.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=33&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1764029,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=33&per_page=1000 HTTP/1.0"
+              }
+            },
+            {
+              "_index": "access",
+              "_type": "access",
+              "_id": "172",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-13T06:52:25.000Z",
+                "type": "access",
+                "Id": 172,
+                "Timestamp": "2016-11-13 12:22:25.000",
+                "IP_Address": "192.168.63.83",
+                "Request": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=36&per_page=1000 HTTP/1.0",
+                "Status_Code": 200,
+                "Size": 1761845,
+                "User_Agent": "Wget/1.12 (linux-gnu)",
+                "Request_analyzed": "GET /media/media?owner_uid=fonse&live_media=false&enabled=true&external=false&page=36&per_page=1000 HTTP/1.0"
+              }
+            }
+          ]
+        }
+    },
+    "awp": {
+        "took": 30,
+        "timed_out": false,
+        "_shards": {
+          "total": 5,
+          "successful": 5,
+          "failed": 0
+        },
+        "hits": {
+          "total": 5082493,
+          "max_score": 1,
+          "hits": [
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399907",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:07.630Z",
+                "type": "awp",
+                "Id": 399907,
+                "Timestamp": "2015-07-01 01:11:07.630",
+                "Component": "System",
+                "Log_Level": "ERROR",
+                "Log_Description": "process pid 6365exited normally with code 0\r\n",
+                "Log_Description_Analyzed": "process pid 6365exited normally with code 0\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399919",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:08.007Z",
+                "type": "awp",
+                "Id": 399919,
+                "Timestamp": "2015-07-01 01:11:08.007",
+                "Component": "SysController",
+                "Log_Level": "WARNING",
+                "Log_Description": "Comm mgr server disconnected unknown node on session:4181\r\n",
+                "Log_Description_Analyzed": "Comm mgr server disconnected unknown node on session:4181\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399921",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:08.346Z",
+                "type": "awp",
+                "Id": 399921,
+                "Timestamp": "2015-07-01 01:11:08.346",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Added new AXE id:101, ip:192.168.98.202 as database client\r\n",
+                "Log_Description_Analyzed": "Added new AXE id:101, ip:192.168.98.202 as database client\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399936",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.000Z",
+                "type": "awp",
+                "Id": 399936,
+                "Timestamp": "2015-07-01 01:11:09.000",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Registered appliance, node id: 15, device id: 80c794c9c1db82047cf96c36c9af5023\r\n",
+                "Log_Description_Analyzed": "Registered appliance, node id: 15, device id: 80c794c9c1db82047cf96c36c9af5023\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399937",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.000Z",
+                "type": "awp",
+                "Id": 399937,
+                "Timestamp": "2015-07-01 01:11:09.000",
+                "Component": "SysController",
+                "Log_Level": "DEBUG",
+                "Log_Description": "Registration ack AMM DB Info: dbName=mongoose_production dbUser=postgres dbPort=5432\r\n",
+                "Log_Description_Analyzed": "Registration ack AMM DB Info: dbName=mongoose_production dbUser=postgres dbPort=5432\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399944",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.098Z",
+                "type": "awp",
+                "Id": 399944,
+                "Timestamp": "2015-07-01 01:11:09.098",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Received state change msg from node 15, ip: 192.168.98.146\r\n",
+                "Log_Description_Analyzed": "Received state change msg from node 15, ip: 192.168.98.146\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399947",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.102Z",
+                "type": "awp",
+                "Id": 399947,
+                "Timestamp": "2015-07-01 01:11:09.102",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Node 15 has reached RUNNING state.\r\n",
+                "Log_Description_Analyzed": "Node 15 has reached RUNNING state.\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399957",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.727Z",
+                "type": "awp",
+                "Id": 399957,
+                "Timestamp": "2015-07-01 01:11:09.727",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Received state change msg from node 95, ip: 192.168.98.112\r\n",
+                "Log_Description_Analyzed": "Received state change msg from node 95, ip: 192.168.98.112\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399958",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.729Z",
+                "type": "awp",
+                "Id": 399958,
+                "Timestamp": "2015-07-01 01:11:09.729",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Node 95 has reached REGISTERED state.\r\n",
+                "Log_Description_Analyzed": "Node 95 has reached REGISTERED state.\r\n"
+              }
+            },
+            {
+              "_index": "awp",
+              "_type": "awp",
+              "_id": "399960",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2015-06-30T19:41:09.731Z",
+                "type": "awp",
+                "Id": 399960,
+                "Timestamp": "2015-07-01 01:11:09.731",
+                "Component": "SysController",
+                "Log_Level": "INFO",
+                "Log_Description": "Node 95 has reached RUNNING state.\r\n",
+                "Log_Description_Analyzed": "Node 95 has reached RUNNING state.\r\n"
+              }
+            }
+          ]
+        }
+    },
+    "awp_db": {
+        "took": 16,
+        "timed_out": false,
+        "_shards": {
+          "total": 5,
+          "successful": 5,
+          "failed": 0
+        },
+        "hits": {
+          "total": 2464024,
+          "max_score": 1,
+          "hits": [
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383407",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:09:46.000Z",
+                "type": "awp_db",
+                "Id": 383407,
+                "Timestamp": "2016-01-15 04:39:46.000",
+                "Log_Level": "LOG",
+                "Log_Description": "recovery restart point at 33B/4F0D0A08\r\n",
+                "Log_Description_Analyzed": "recovery restart point at 33B/4F0D0A08\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383418",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:24:45.000Z",
+                "type": "awp_db",
+                "Id": 383418,
+                "Timestamp": "2016-01-15 04:54:45.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint complete: wrote 4111 buffers (1.6%); 0 transaction log file(s) added, 0 removed, 2 recycled; write=269.938 s, sync=0.009 s, total=269.951 s; sync files=48, longest=0.002 s, average=0.000 s\r\n",
+                "Log_Description_Analyzed": "restartpoint complete: wrote 4111 buffers (1.6%); 0 transaction log file(s) added, 0 removed, 2 recycled; write=269.938 s, sync=0.009 s, total=269.951 s; sync files=48, longest=0.002 s, average=0.000 s\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383425",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:30:17.000Z",
+                "type": "awp_db",
+                "Id": 383425,
+                "Timestamp": "2016-01-15 05:00:17.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint starting: time\r\n",
+                "Log_Description_Analyzed": "restartpoint starting: time\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383426",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:34:46.000Z",
+                "type": "awp_db",
+                "Id": 383426,
+                "Timestamp": "2016-01-15 05:04:46.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint complete: wrote 3208 buffers (1.2%); 0 transaction log file(s) added, 0 removed, 2 recycled; write=268.928 s, sync=0.007 s, total=268.938 s; sync files=41, longest=0.001 s, average=0.000 s\r\n",
+                "Log_Description_Analyzed": "restartpoint complete: wrote 3208 buffers (1.2%); 0 transaction log file(s) added, 0 removed, 2 recycled; write=268.928 s, sync=0.007 s, total=268.938 s; sync files=41, longest=0.001 s, average=0.000 s\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383427",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:34:46.000Z",
+                "type": "awp_db",
+                "Id": 383427,
+                "Timestamp": "2016-01-15 05:04:46.000",
+                "Log_Level": "LOG",
+                "Log_Description": "recovery restart point at 33B/58624D68\r\n",
+                "Log_Description_Analyzed": "recovery restart point at 33B/58624D68\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383433",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:40:17.000Z",
+                "type": "awp_db",
+                "Id": 383433,
+                "Timestamp": "2016-01-15 05:10:17.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint starting: time\r\n",
+                "Log_Description_Analyzed": "restartpoint starting: time\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383444",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:54:47.000Z",
+                "type": "awp_db",
+                "Id": 383444,
+                "Timestamp": "2016-01-15 05:24:47.000",
+                "Log_Level": "DETAIL",
+                "Log_Description": "last completed transaction was at log time 2016-01-15 05:24:46.968233+00\r\n",
+                "Log_Description_Analyzed": "last completed transaction was at log time 2016-01-15 05:24:46.968233+00\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383445",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-14T23:55:17.000Z",
+                "type": "awp_db",
+                "Id": 383445,
+                "Timestamp": "2016-01-15 05:25:17.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint starting: time\r\n",
+                "Log_Description_Analyzed": "restartpoint starting: time\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383449",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-15T00:00:17.000Z",
+                "type": "awp_db",
+                "Id": 383449,
+                "Timestamp": "2016-01-15 05:30:17.000",
+                "Log_Level": "LOG",
+                "Log_Description": "restartpoint starting: time\r\n",
+                "Log_Description_Analyzed": "restartpoint starting: time\r\n"
+              }
+            },
+            {
+              "_index": "awp_db",
+              "_type": "awp_db",
+              "_id": "383452",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-01-15T00:04:47.000Z",
+                "type": "awp_db",
+                "Id": 383452,
+                "Timestamp": "2016-01-15 05:34:47.000",
+                "Log_Level": "DETAIL",
+                "Log_Description": "last completed transaction was at log time 2016-01-15 05:34:46.650831+00\r\n",
+                "Log_Description_Analyzed": "last completed transaction was at log time 2016-01-15 05:34:46.650831+00\r\n"
+              }
+            }
+          ]
+        }
+    },
+    "error": {
+        "took": 1,
+        "timed_out": false,
+        "_shards": {
+          "total": 5,
+          "successful": 5,
+          "failed": 0
+        },
+        "hits": {
+          "total": 175,
+          "max_score": 1,
+          "hits": [
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "126",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:05:47.000Z",
+                "type": "error",
+                "Id": 126,
+                "Timestamp": "2016-11-17 08:35:47.000",
+                "Log_Level": "error",
+                "Log_Description": "(20014)Internal error: DBD: Can't connect to pgsql\r\n",
+                "Log_Description_Analyzed": "(20014)Internal error: DBD: Can't connect to pgsql\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "129",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:05:55.000Z",
+                "type": "error",
+                "Id": 129,
+                "Timestamp": "2016-11-17 08:35:55.000",
+                "Log_Level": "error",
+                "Log_Description": "(20014)Internal error: DBD: Can't connect to pgsql\r\n",
+                "Log_Description_Analyzed": "(20014)Internal error: DBD: Can't connect to pgsql\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "130",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:12:54.000Z",
+                "type": "error",
+                "Id": 130,
+                "Timestamp": "2016-11-17 08:42:54.000",
+                "Log_Level": "error",
+                "Log_Description": "(20014)Internal error: DBD: Can't connect to pgsql\r\n",
+                "Log_Description_Analyzed": "(20014)Internal error: DBD: Can't connect to pgsql\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "132",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:12:54.000Z",
+                "type": "error",
+                "Id": 132,
+                "Timestamp": "2016-11-17 08:42:54.000",
+                "Log_Level": "error",
+                "Log_Description": "[client 192.168.115.147] Failed to acquire database connection to look up user 'fonse:azuki.com'\r\n",
+                "Log_Description_Analyzed": "[client 192.168.115.147] Failed to acquire database connection to look up user 'fonse:azuki.com'\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "143",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:18:13.000Z",
+                "type": "error",
+                "Id": 143,
+                "Timestamp": "2016-11-17 08:48:13.000",
+                "Log_Level": "notice",
+                "Log_Description": "Digest: done\r\n",
+                "Log_Description_Analyzed": "Digest: done\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "144",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:18:14.000Z",
+                "type": "error",
+                "Id": 144,
+                "Timestamp": "2016-11-17 08:48:14.000",
+                "Log_Level": "notice",
+                "Log_Description": "SSL FIPS mode disabled\r\n",
+                "Log_Description_Analyzed": "SSL FIPS mode disabled\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "145",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:18:15.000Z",
+                "type": "error",
+                "Id": 145,
+                "Timestamp": "2016-11-17 08:48:15.000",
+                "Log_Level": "notice",
+                "Log_Description": "Apache/2.2.23 (Unix) DAV/2 PHP/5.3.3 mod_ssl/2.2.23 OpenSSL/1.0.0-fips configured -- resuming normal operations\r\n",
+                "Log_Description_Analyzed": "Apache/2.2.23 (Unix) DAV/2 PHP/5.3.3 mod_ssl/2.2.23 OpenSSL/1.0.0-fips configured -- resuming normal operations\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "149",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T03:18:36.000Z",
+                "type": "error",
+                "Id": 149,
+                "Timestamp": "2016-11-17 08:48:36.000",
+                "Log_Level": "error",
+                "Log_Description": "(20014)Internal error: DBD: Can't connect to pgsql\r\n",
+                "Log_Description_Analyzed": "(20014)Internal error: DBD: Can't connect to pgsql\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "166",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T06:05:43.000Z",
+                "type": "error",
+                "Id": 166,
+                "Timestamp": "2016-11-17 11:35:43.000",
+                "Log_Level": "notice",
+                "Log_Description": "SSL FIPS mode disabled\r\n",
+                "Log_Description_Analyzed": "SSL FIPS mode disabled\r\n"
+              }
+            },
+            {
+              "_index": "error",
+              "_type": "error",
+              "_id": "172",
+              "_score": 1,
+              "_source": {
+                "@version": "1",
+                "@timestamp": "2016-11-17T10:38:53.000Z",
+                "type": "error",
+                "Id": 172,
+                "Timestamp": "2016-11-17 16:08:53.000",
+                "Log_Level": "warn",
+                "Log_Description": "[client 10.107.1.133] Timeout waiting for output from CGI script /usr/local/azuki/awp/www/cgi/media/status\r\n",
+                "Log_Description_Analyzed": "[client 10.107.1.133] Timeout waiting for output from CGI script /usr/local/azuki/awp/www/cgi/media/status\r\n"
+              }
+            }
+          ]
+        }
+    }
+  }
+}

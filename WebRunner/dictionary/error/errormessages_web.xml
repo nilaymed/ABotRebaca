@@ -1,0 +1,31 @@
+<!-- 
+###########################################################################################################################
+#  Error validation dictionary - errormessages.xml                                                                        #                                                                      
+#  Rebaca Technology Private Limited 2019-2020                                                                            #
+#                                                                                                                         #  
+#  This SOFTWARE PRODUCT is provided by THE PROVIDER "as is" and "with known bugs." THE PROVIDER makes no representations # 
+#  or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or  #
+#  other harmful components of this SOFTWARE PRODUCT. There are inherent dangers in the use of any software, and you are  #
+#  solely responsible for determining whether this SOFTWARE PRODUCT is compatible with your equipment and other software  #
+#  installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your   #
+#  data, and THE PROVIDER will not be liable for any damages you may suffer in connection with using, modifying, or       #
+#  distributing this SOFTWARE PRODUCT. THE PROVIDER has however tested the integrity of the SOFTWARE in every sense, just #
+#  to ensure it will not bring in ANY collateral damages to the system.                                                   #
+#                                                                                                                         # 
+#  It is NOT recommended to change the order or contents of this file, since it may break the error and validation        # 
+#  mechanism partially or completely.                                                                                     #
+###########################################################################################################################
+ -->
+
+<ErrorOrWarning>
+	<Error id="INVALID_ACTION_REQUEST" >
+		<code>5000</code>
+		<image ref="" height="" width="" />
+		<help>
+		<![CDATA[
+			This error appears when a requested action cannot be performed on an element as the dictionary definition suggest a different action to be performed.
+		]]>  
+		</help>
+		<message>Failed to process library/library block. </message>
+	</Error>
+</ErrorOrWarning>

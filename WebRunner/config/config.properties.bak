@@ -1,0 +1,246 @@
+############################################# START OF ABOT CONFIG ############################################
+ABOT.SecureShell.IPAddress=192.168.2.193
+ABOT.SecureShell.UserName=ubuntu
+ABOT.SecureShell.KeyFile=/home/ubuntu/.ssh/id_rsa
+ABOT.PacketCapture=false;
+#ABOT.PacketCapture.UDPPorts=1812,1813,1814,1815,1700,161,162
+#ABOT.PacketCapture.TCPPorts=3868,8080,25,2775,22
+ABOT.LicenseKey=bb7592ab-a847-4802-a1a5-a500940e2756
+
+############################################# END OF ABOT CONFIG ###############################################
+
+############################################# START OF EPC SUT CONFIG #################################################
+
+
+
+############################################# END OF EPC SUT CONFIG ###################################################
+
+WAIT_1_SEC=1
+WAIT_2_SEC=2
+WAIT_3_SEC=3
+WAIT_5_SEC=5
+WAIT_10_SEC=10
+WAIT_30_SEC=30
+WAIT_1_MIN=60
+
+## Signature related parameters
+
+## Signature method (FILE or SERVER)
+SIGNATURE.VALIDATE.METHOD=FILE
+
+## Signature path
+SIGNATURE.PATH=dictionary/signature/signature.sign
+
+## Vector related mappings
+
+## Vector base dictionary path
+VECTOR.DICTIONARY.PATH=dictionary/vector
+
+## Tools-Set Dictionaries Specification
+VECTOR.TOOLSET.DICTIONARY.PATH=tools/tools_dic.xml
+VECTOR.COMMAND.FILES.PATH=tools/command/cmd_dict.xml
+VECTOR.LIBRARY.FILES.PATH=library
+
+
+######################################################################################################################################
+# Application Dictionaries
+######################################################################################################################################
+APP.DICT.BASE=dictionary/webapp/
+
+######################################################################################################################################
+# Available Applications
+######################################################################################################################################
+APP.LIST=mediakind,refapp,confluence,vector,nextgen,google,YouTube,UMCRefAppV1.0
+
+
+######################################################################################################################################
+# This configurations is currently not under use. This is planned for future releases
+Applications=Application1,Application2
+
+# Application1 Configuration
+Applications.Application1.Name=UMCRefAppV1.0
+Applications.Application1.Player.Stable.Delay=2000
+Applications.Application1.Player.ForwardRewind.Delay=0
+
+# Application2 Configuration 
+Applications.Application2.Name=refapp
+Applications.Application2.Player.Stable.Delay=2000
+Applications.Application2.Player.ForwardRewind.Delay=0
+Applications.Application2.Server="https://{}@wmc.mr.tv3cloud.com/master/20200601-482112/RefApp/index_d.html
+Applications.Application2.User=mfuser
+Applications.Application2.Password=MF!2020
+#######################################################################################################################################
+
+# Current Application Environment
+Current.Application.Environment.Url=https://{}@wmc.mr.tv3cloud.com/master/20200601-482112/RefApp/index_d.html
+Current.Application.Environment.Username=mfuser
+Current.Application.Environment.Password=MF!2020
+
+
+
+# Global Properties
+Player.Stable.Max.Timeout.Delay.Percentage=30
+Player.Stable.Delay=2
+Player.ForwardRewind.Delay=3
+Player.SeekDrag.Delay=
+Player.SeekDrag.Tolerance.Percentage=7
+WAIT.RESUME.TIME=25
+
+Applications.Application2.Name=refapp
+Applications.Application2.Player.Stable.Delay=2000
+Applications.Application2.Player.ForwardRewind=0
+
+
+######################################################################################################################################
+# Appium Server Configurations
+######################################################################################################################################
+Appium.Server.Port=4723
+
+
+######################################################################################################################################
+# Default Application Driver 
+######################################################################################################################################
+APP.WEB.DRIVER=chrome 
+
+######################################################################################################################################
+# Error Message File
+######################################################################################################################################
+ERROR.MESSAGE.FILE=dictionary/error/errormessages.xml
+
+######################################################################################################################################
+# Remote Devices
+######################################################################################################################################
+Remote.Devices=Device1,Device2,Device3,Device4
+
+# Device1 Configuration
+Remote.Devices.Device1.Name=192.168.0.104:5555
+Remote.Devices.Device1.ApplicationName=UMCRefAppV1.0
+Remote.Devices.Device1.PlatformName=Android
+Remote.Devices.Device1.PlatfromVersion=10
+Remote.Devices.Device1.Host=127.0.0.1
+Remote.Devices.Device1.Protocol=http
+Remote.Devices.Device1.Port=4723
+
+# Device2 Configuration
+Remote.Devices.Device2.Name=
+Remote.Devices.Device2.ApplicationName=
+Remote.Devices.Device2.PlatformName=
+Remote.Devices.Device2.PlatfromVersion=
+Remote.Devices.Device2.Host=
+Remote.Devices.Device2.Protocol=
+Remote.Devices.Device2.Port=
+
+# Device3 Configuration
+Remote.Devices.Device3.Name=
+Remote.Devices.Device3.ApplicationName=
+Remote.Devices.Device3.PlatformName=
+Remote.Devices.Device3.PlatfromVersion=
+Remote.Devices.Device3.Host=
+Remote.Devices.Device3.Protocol=
+Remote.Devices.Device3.Port=
+
+# Device4 Configuration
+Remote.Devices.Device4.Name=
+Remote.Devices.Device4.ApplicationName=
+Remote.Devices.Device4.PlatformName=
+Remote.Devices.Device4.PlatfromVersion=
+Remote.Devices.Device4.Host=
+Remote.Devices.Device4.Protocol=
+Remote.Devices.Device4.Port=
+
+
+######################################################################################################
+
+refapp.pbr=IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_PAUSE,IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_FF,IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_RW
+
+refapp.pbr.imc.status.1.id=IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_RW
+refapp.pbr.imc.status.1.code=225
+refapp.pbr.imc.status.1.message=Seek/Skip Rewind is disabled by PBR
+refapp.pbr.imc.status.1.value1=
+refapp.pbr.imc.status.1.value2=
+refapp.pbr.imc.status.1.amcError=eventType
+
+ 
+refapp.pbr.imc.status.2.id=IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_PAUSE
+refapp.pbr.imc.status.2.code=false
+refapp.pbr.imc.status.2.message=Pause is disabled by PBR
+refapp.pbr.imc.status.2.value1=
+refapp.pbr.imc.status.2.value2=
+refapp.pbr.imc.status.2.amcError=eventType
+
+ 
+refapp.pbr.imc.status.3.id=IMC_STATUS_DRMAGENT_NO_RIGHTS_FOR_FF
+refapp.pbr.imc.status.3.code=224
+refapp.pbr.imc.status.3.message=Seek/Skip Forward is disabled by PBR
+refapp.pbr.imc.status.3.value1=
+refapp.pbr.imc.status.3.value2=
+refapp.pbr.imc.status.3.amcError=eventType
+
+
+######################################################################################################
+RefApp.PBR.Events=Event1
+
+RefApp.PBR.Events.Event1.Type=ProcessEvent
+RefApp.PBR.Events.Event1.ErrorCodes=228, 229, 231, 224, 225
+RefApp.PBR.Events.Event1.Properties=All
+RefApp.PBR.Events.Event1.Key.Property=code
+RefApp.PBR.Events.Event1.Message.Type=json
+
+
+
+######################################################################################################
+Test.Environments=Environment1
+
+Test.Environments.Environment1.URL=https://reachclient.cip.mr.tv3cloud.com/
+Test.Environments.Environment1.Users=User1,User2
+ 
+# User1 Definition
+Test.Environments.Environment1.Users.User1.Name=esawsum@outlook.com
+Test.Environments.Environment1.Users.User1.Password=MicroLook!@
+
+# User2 Definition
+Test.Environments.Environment1.Users.User2.Name=jinadatta@outlook.com
+Test.Environments.Environment1.Users.User2.Password=Jina@123
+
+# Current Test Environment
+Current.Test.Environment=Environment1
+Current.Test.Environment.User=User2
+
+######################################################################################################
+
+RefApp.PBR.Events=ProcessEvent
+
+RefApp.PBR.Events.ProcessEvent.Type=ProcessEvent
+RefApp.PBR.Events.ProcessEvent.ErrorCodes=228, 229, 231, 224, 225
+RefApp.PBR.Events.ProcessEvent.Properties=All
+RefApp.PBR.Events.ProcessEvent.Key.Property=code
+RefApp.PBR.Events.ProcessEvent.Format=json
+
+##############################################################################################################################################################
+# RefApp STS Authentication Token - Field Identifier
+##############################################################################################################################################################
+RefApp.OAuth.Token.Field=STS tokens
+
+
+
+REFAPP.PBR.VALIDATION=
+REFAPP.PBR.IMC_ERROR_CODES=224, 225, 228, 229, 231
+
+
+EXECUTE.ON.FAILURE=true
+
+
+
+#High Lighter
+APP.HIGHLIGHTER.TEXT.COLOR=#F56705;
+APP.HIGHLIGHTER.TEXTBOX.COLOR=#CA3DED;
+APP.HIGHLIGHTER.VALIDATOR.COLOR=#82ED10;
+
+
+#RMQ
+RMQ.CONNECT=false
+RETRY.COUNT=18
+RMQ.PWD=rmquser
+RMQ.USR=rmquser
+RMQ.HOST=192.168.80.222
+

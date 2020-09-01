@@ -1,0 +1,53 @@
+<aside class="main-sidebar">
+    <section class="sidebar" >
+        <!-- /.search form -->
+		<ul class="sidebar-menu">
+			<li class="header">MAIN NAVIGATION</li>
+			<li class="active treeview">
+			<a href="#">
+			      <i class="fa fa-home"></i>
+			       <span>Dashboard</span>
+			       <span class="pull-right-container">
+			       <i class="fa fa-angle-left pull-right"></i>
+				  </span>
+			</a>
+				<ul class="treeview-menu">
+					<li ng-class="{active: (left_bar_state == 'dashboardFeatureView')}"><a href="#/app/dashboardFeatureView">
+					<i class="fa fa-dashboard"></i>Feature Overview</a></li>
+					<li ng-class="{active: (left_bar_state == 'dashboardTagView')}"><a href="#/app/dashboardTagView">
+					<i class="fa fa-dashboard"></i>Tag Overview</a></li>
+				</ul>
+			</li>
+			<!-- <li ng-class="{active: (left_bar_state == 'dashboardFeatureView')}">
+				<a href="#/app/dashboardFeatureView"> <i class="fa fa-dashboard"></i>
+					<span>Dashboard Feature Overview</span>
+			</a>
+			</li>
+			<li ng-class="{active: (left_bar_state == 'dashboardTagView')}">
+				<a href="#/app/dashboardTagView"> <i class="fa fa-dashboard"></i>
+					<span>Dashboard Tag Overview</span>
+			</a>
+			</li> -->
+			<li ng-class="{active: (left_bar_state == 'ArtifactsView')}"><a
+				href="#/app/artifactsView"> <i class="fa fa-list-alt"></i> <span>Artifacts</span>
+			</a></li>
+			<li ng-class="{active: (left_bar_state == 'FeatureFileView')}">
+				<a href="#/app/featureFileView"> <i class="fa fa-file-text-o"></i>
+					<span>Feature File</span>
+			</a>
+			</li>
+			<li ng-class="{active: (left_bar_state == 'ConfigViewView')}"><a
+				href="#/app/configView"> <i class="fa fa-wrench"></i> <span>Config</span>
+			</a></li>
+			<li ng-class="{active: (left_bar_state == 'ExecutionView')}"><a
+				href="#/app/executionView"> <i ng-show="running==false" class="fa fa-file-code-o"></i><img alt="" ng-show="running==true" src="Content/Images/spinner.gif" style="width: 20px;height: 20px;"> <span>Execution</span>
+			</a></li>
+			<li ng-class="{active: (left_bar_state == 'GraphView')}">
+				<a href="#/app/graphView" ng-click="graphViewClicked()"> <i class="fa fa-bar-chart-o"></i>
+					<span>Graph View</span>
+			</a>
+		</ul>
+		<!-- /.left hand bar -->
+    </section>
+    <!-- /.sidebar -->
+</aside>

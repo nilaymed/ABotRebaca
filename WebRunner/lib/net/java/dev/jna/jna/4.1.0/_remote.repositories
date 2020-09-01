@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jun 13 18:27:20 IST 2019
+jna-4.1.0.jar>file-repo=
+jna-4.1.0.pom>file-repo=

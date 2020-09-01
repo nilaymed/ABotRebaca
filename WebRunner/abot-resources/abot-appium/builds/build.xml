@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Appium" basedir=".">
+	<echo message="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+	<target name="copy-screenshots">
+		<condition property="dir.exists" else="false">
+			<available file="${sourceDir}" type="dir" />
+		</condition>
+		<echo message="Folder found: ${dir.exists}" />
+		<antcall target="prepare-screenshot-res" />
+	</target>
+
+		<target name="prepare-screenshot-res" if="${dir.exists}">
+		<mkdir dir="${reportDir}/screenshots" />
+		<copy todir="${reportDir}/screenshots">
+			<fileset dir="${sourceDir}" includes="**/*" />
+			<resources>
+			    <file file="${imagesDir}/cross.png"/>
+			    <file file="${imagesDir}/tick.png"/>
+			    <file file="${imagesDir}/collapse.png"/>
+			    <file file="${imagesDir}/expand.png"/>
+			</resources>
+		</copy>
+		<delete includeemptydirs="true">
+			<fileset dir="${sourceDir}" />
+		</delete>
+	</target>
+</project>
+
