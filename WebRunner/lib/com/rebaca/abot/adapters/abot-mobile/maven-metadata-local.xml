@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.rebaca.abot.adapters</groupId>
-  <artifactId>abot-ssh</artifactId>
+  <artifactId>abot-mobile</artifactId>
   <versioning>
-    <release>2.3.0</release>
+    <release>7.0.0</release>
     <versions>
-      <version>2.3.0</version>
+      <version>7.0.0</version>
     </versions>
-    <lastUpdated>20200901085910</lastUpdated>
+    <lastUpdated>20200901085932</lastUpdated>
   </versioning>
 </metadata>

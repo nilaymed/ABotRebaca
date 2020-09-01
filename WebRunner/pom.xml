@@ -90,25 +90,25 @@
 		<dependency>
 			<groupId>com.rebaca.abot.adapters</groupId>
 			<artifactId>abot-web</artifactId>
-			<version>6.1.0</version>
+			<version>7.0.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.rebaca.abot.adapters</groupId>
 			<artifactId>abot-mobile</artifactId>
-			<version>6.1.0</version>
+			<version>7.0.0</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.rebaca.abot.adapters</groupId>
 			<artifactId>abot-ott</artifactId>
-			<version>6.1.0</version>
+			<version>7.0.0</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.rebaca.abot.adapters</groupId>
 			<artifactId>abot-jmeter</artifactId>
-			<version>6.1.0</version>
+			<version>1.0.0</version>
 		</dependency>
 
 		<dependency>
