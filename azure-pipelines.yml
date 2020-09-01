@@ -11,13 +11,20 @@ pool:
 
 steps:
 - script: | 
-    echo "Run custom command"
-    cd $(System.DefaultWorkingDirectory)
-    dir
-    cd C:\Users\rebaca\agent\_work
-    test.bat 
-  displayName: 'Run a one-line script'
+    echo "Download CodeBase"
+    #cd $(System.DefaultWorkingDirectory)
+    #dir
+    #cd C:\Users\rebaca\agent\_work
+    #test.bat 
+  displayName: 'Download_CODE_BASE'
 
+- script: | 
+    echo "Run Test Case"
+    cd $(System.DefaultWorkingDirectory)
+    dir 
+    cd WebRunner 
+    webrunner.bat @RefApp_Player_VOD_Media_Basic_Playback  
+  displayName: 'RUN_TESTCASE_CODE_BASE'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
