@@ -19,7 +19,11 @@ steps:
     cd $(System.DefaultWorkingDirectory)
     dir 
     cd WebRunner
+    mkdir log
+    cd log
+    mkdir webrunner
     dir 
+    cd ..
     webrunner.bat @RefApp_Player_VOD_Media_Basic_Playback  
   displayName: 'RUN_TESTCASE_CODE_BASE'
 
