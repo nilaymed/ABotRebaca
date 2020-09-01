@@ -37,5 +37,10 @@ source build_web.sh  ABOT-WEB
 info "======================="
 info "Completed successfully"
 info "======================="
+cd $baseDirectory
+source build_jmeter.sh  ABOT-JMETER
+info "======================="
+info "Completed successfully"
+info "======================="
 #cd $baseDirectory
 #echo "Finished building $1"
