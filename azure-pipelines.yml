@@ -24,7 +24,7 @@ steps:
     mkdir webrunner
     dir 
     cd ..
-    webrunner.bat @UMC_Player_Restart_VOD  
+    webrunner.bat @UMC_Player_Play_Pause_Stop 
   displayName: 'RUN_TESTCASE_CODE_BASE'
 
 - script: |
