@@ -3,6 +3,7 @@
 ###########################################################################################
 @RefApp_Player_VOD_Media_Basic_Playback
 @RefApp_Player_VOD_Sanity
+@ADO_Test
 @mytag_PB
 @Sanity_Integration
 Feature: RefApp Player VOD Media Basic Playback
