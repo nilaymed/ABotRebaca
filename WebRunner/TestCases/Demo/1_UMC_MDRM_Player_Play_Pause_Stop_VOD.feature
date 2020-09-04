@@ -3,6 +3,7 @@
 #								                Author Name: Soumil Chatterjee                            #
 ###########################################################################################
 @UMC_Player_Play_Pause_Stop
+@ADO_Test
 @Demo_R5
 @Demo6
 
