@@ -6,6 +6,7 @@
 @ADO_Test
 @Demo_R5
 @Demo6
+@ADO_Test
 
 Feature: D1_UMC_Player_Play_Pause_Stop_VOD
 

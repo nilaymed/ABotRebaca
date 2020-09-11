@@ -6,6 +6,8 @@
 @ADO_Test
 @mytag_PB
 @Sanity_Integration
+@ADO_Test
+
 Feature: RefApp Player VOD Media Basic Playback
 
   Scenario: Run the refapp player to verify the Start Playback of VOD media
