@@ -4,7 +4,7 @@
 ###########################################################################################
 @UMC_AMC_IOS_Player_Play_Pause_Stop
 @UMC_AMC_IOS_Sanity
-
+@ADO_Test
 
 Feature: I1_UMC_Player_Play_Pause_Stop_VOD
 
