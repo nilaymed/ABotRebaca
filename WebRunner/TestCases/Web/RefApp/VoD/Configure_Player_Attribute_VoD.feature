@@ -4,6 +4,7 @@
 @RefApp_Player_VOD_Media_Configure_Attribute
 @RefApp_Player_VOD_Sanity
 @Sanity_Integration
+@ADO_Configure
 Feature: RefApp Player VOD Media Configure Attribute
 
   Scenario: Run the refapp player for VoD (default) playback mode

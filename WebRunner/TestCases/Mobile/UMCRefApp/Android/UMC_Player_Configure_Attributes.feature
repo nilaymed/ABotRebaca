@@ -4,6 +4,7 @@
 ###########################################################################################
 @UMC_RefApp_Configure_Attributes
 @UMC_RefApp_Sanity
+@ADO_Configure
 
 Feature: UMC_RefApp_Configure_Attributes
 

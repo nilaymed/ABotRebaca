@@ -4,6 +4,7 @@
 ###########################################################################################
 @UMC_IOS_Configure_Player
 @UMC_IOS_Sanity
+@ADO_Configure
 
 Feature: Configure_AMC_IOS
 
