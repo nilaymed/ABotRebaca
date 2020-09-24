@@ -3,7 +3,7 @@ Feature: UMC_IOS_VOD_Common_Steps
 
   Scenario: Create global system configuration for UMC VOD
 	
-Given I initialize the mobile-device Device3 and launch the application
+Given I initialize the mobile-device Device2 and launch the application
 
 #Then I validate UmcRefApp text to be present on window
 
