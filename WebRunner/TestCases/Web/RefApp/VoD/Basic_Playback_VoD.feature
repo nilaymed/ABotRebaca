@@ -19,8 +19,8 @@ Feature: RefApp Player VOD Media Basic Playback
     
     Given the test data is in file /TestCases/Web/MessageBundle/WebMessageBundle.xml
     
-    And I use the message-id RFVD002
-    
+    #And I use the message-id RFVD002
+    And I use the message-id RFVD014
     # Call common step
 	Given I run the feature RefApp_Player_VOD_Common_Steps
 	
