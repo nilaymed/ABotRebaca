@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<test-data>
+	<data id="msg01" adapter="WEBSERVICECLIENT">
+		<soap>
+			<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:web="http://www.webservicex.net/">
+				<soapenv:Header />
+				<soapenv:Body>
+					<web:IsSDNAndBlockedPersons>
+						<!--Optional: -->
+						<web:Names>saddam hussein</web:Names>
+					</web:IsSDNAndBlockedPersons>
+				</soapenv:Body>
+			</soapenv:Envelope>
+		</soap>
+	</data>
+	<data id="msg02" adapter="WEBSERVICECLIENT">
+		<soap>
+			<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+				<soap:Body>
+					<IsSDNAndBlockedPersonsResponse
+						xmlns="http://www.webservicex.net/">
+						<IsSDNAndBlockedPersonsResult>true</IsSDNAndBlockedPersonsResult>
+						<SDNLists>
+							<TotalRecords>10</TotalRecords>
+							<SDNLists>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Ali Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1980; alt. DOB 1983; POB Iraq; nationality
+										Iraqi; son of Saddam Hussein al-Tikriti.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>HASSAN</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Hala Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1972; POB Iraq; nationality Iraqi; daughter
+										of Saddam Hussein al-Tikriti.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity />
+									<AlternateIdentityName />
+									<RemarksOnAlternative />
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Raghad Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1967; POB Iraq; nationality Iraqi; daughter
+										of Saddam Hussein al-Tikriti.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>Amman</City>
+									<Country>Jordan</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity />
+									<AlternateIdentityName />
+									<RemarksOnAlternative />
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Rana Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1969; POB Iraq; nationality Iraqi; daughter
+										of Saddam Hussein al-Tikriti.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>Amman</City>
+									<Country>Jordan</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity />
+									<AlternateIdentityName />
+									<RemarksOnAlternative />
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 28 Apr 1937, POB al-Awja, near Tikrit, Iraq;
+										named in UNSCR 1483; President since 1979; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>Abu Ali</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 28 Apr 1937, POB al-Awja, near Tikrit, Iraq;
+										named in UNSCR 1483; President since 1979; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>HUSAYN, Saddam</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 28 Apr 1937, POB al-Awja, near Tikrit, Iraq;
+										named in UNSCR 1483; President since 1979; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>HUSSAIN, Saddam</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 28 Apr 1937, POB al-Awja, near Tikrit, Iraq;
+										named in UNSCR 1483; President since 1979; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>HUSSEIN, Saddam</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Qusay Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1965; alt. DOB 1966; POB Baghdad, Iraq;
+										Saddam Hussein al-Tikriti's second son; oversaw Special
+										Republican Guard, Special Security Organization, and
+										Republican Guard; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity />
+									<AlternateIdentityName />
+									<RemarksOnAlternative />
+								</SDN>
+								<SDN>
+									<NameOfSDN>AL-TIKRITI, Uday Saddam Hussein</NameOfSDN>
+									<TypeOfSDN>individual</TypeOfSDN>
+									<SanctionsProgramName>IRAQ2</SanctionsProgramName>
+									<TitleOfAnIndividual>N/A</TitleOfAnIndividual>
+									<VesselCallSign>N/A</VesselCallSign>
+									<VesselType>N/A</VesselType>
+									<VesselTonnage>N/A</VesselTonnage>
+									<GrossRegisteredTonnage>N/A</GrossRegisteredTonnage>
+									<VesselFlag>N/A</VesselFlag>
+									<VesselOwner>N/A</VesselOwner>
+									<RemarksOnSDN>DOB 1964 alt. DOB 1967; POB Baghdad, Iraq; Saddam
+										Hussein al-Tikriti's eldest son; leader of paramilitary
+										organization Fedayeen Saddam; nationality Iraqi.</RemarksOnSDN>
+									<StreetAddress>N/A</StreetAddress>
+									<City>N/A</City>
+									<Country>N/A</Country>
+									<RemarksOnAddress>N/A</RemarksOnAddress>
+									<TypeOfAlternateIdentity>aka</TypeOfAlternateIdentity>
+									<AlternateIdentityName>HUSSEIN, Udai Saddam</AlternateIdentityName>
+									<RemarksOnAlternative>N/A</RemarksOnAlternative>
+								</SDN>
+							</SDNLists>
+						</SDNLists>
+					</IsSDNAndBlockedPersonsResponse>
+				</soap:Body>
+			</soap:Envelope>
+		</soap>
+	</data>
+</test-data>
+

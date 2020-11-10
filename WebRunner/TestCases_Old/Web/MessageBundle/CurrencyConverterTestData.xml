@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<test-data>
+	<data id="msg01" adapter="WEBSERVICECLIENT">
+		<soap>
+			<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:web="http://www.webservicex.net/">
+				<soapenv:Header />
+				<soapenv:Body>
+					<web:GetGeoIP>
+						<!--Optional: -->
+						<web:IPAddress>192.168.50.172</web:IPAddress>
+					</web:GetGeoIP>
+				</soapenv:Body>
+			</soapenv:Envelope>
+		</soap>
+	</data>
+	<data id="msg02" adapter="WEBSERVICECLIENT">
+		<soap>
+			<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+				<soap:Body>
+					<GetGeoIPResponse xmlns="http://www.webservicex.net/">
+						<GetGeoIPResult>
+							<ReturnCode>1</ReturnCode>
+							<IP>192.168.50.172</IP>
+							<ReturnCodeDetails>Success</ReturnCodeDetails>
+							<CountryName>Reserved</CountryName>
+							<CountryCode>ZZZ</CountryCode>
+						</GetGeoIPResult>
+					</GetGeoIPResponse>
+				</soap:Body>
+			</soap:Envelope>
+		</soap>
+	</data>
+</test-data>
+
