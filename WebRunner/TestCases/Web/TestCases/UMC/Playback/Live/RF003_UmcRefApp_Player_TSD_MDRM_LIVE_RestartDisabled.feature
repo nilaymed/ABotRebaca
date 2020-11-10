@@ -2,6 +2,7 @@
 #                            Date: <06/12/2020> Version: <4.3.0>                          #
 #							        Author Name: Suman Saw                                #
 ###########################################################################################
+@Sanity-LiveCheck_MOBILE_DEVICE
 @Sanity-LiveCheck
 @SanityCheck
 
