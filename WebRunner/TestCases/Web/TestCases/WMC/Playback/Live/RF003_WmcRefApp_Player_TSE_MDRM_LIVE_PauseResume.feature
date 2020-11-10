@@ -2,6 +2,7 @@
 #                              Date: <04/28/2020> Version: <3.0>                          #
 #								Author Name: Kamatchi Rajan                               #
 ###########################################################################################
+@SanityCheck_TESTADO
 @SanityCheck
 @WMC_SanityCheck
 
